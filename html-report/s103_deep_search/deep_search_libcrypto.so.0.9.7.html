@@ -1,0 +1,399 @@
+<!-- 
+emba - EMBEDDED LINUX ANALYZER
+
+Copyright 2020-2021 Siemens AG
+Copyright 2020-2021 Siemens Energy AG
+
+emba comes with ABSOLUTELY NO WARRANTY. This is free software, and you are
+welcome to redistribute it under the terms of the GNU General Public License.
+See LICENSE file for usage of this software.
+
+emba is licensed under GPLv3
+
+Author(s): Michael Messner, Pascal Eckmann, Stefan Haboeck
+-->
+
+<!-- Used icons: https://github.com/CoreyGinnivan/system-uicons -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Emba firmware report</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./../style/style.css" type="text/css">
+</head>
+<body>
+
+<div id="sidenav" class="side">
+  <div class="logo">
+    <a class="inherit" href="./../index.html"><img class="inherit" src="./../style/emba.svg" alt="emba logo"></a>
+  </div>
+  <div id="nav">
+      <a class="back" href="./../index.html">&laquo; Back to main</a>
+<a class="modul" href="./../s103_deep_search.html" title="./../s103_deep_search.html" >&laquo; Back to s103_deep_search</a>
+      <!-- navigation start -->
+      <!-- navigation end -->
+      <input id="expand" class="expand_njs hidden" type="button" value="More results:" onclick="this.value=this.value=='+ Show more results'?'- Hide more results':'+ Show more results';">
+      <div class="expand_area">
+        <!-- etc start -->
+        <!-- etc end -->
+      </div>
+  </div>
+  <a href="TIMELINK"><div id="buttonTimeInvisible" class="rectButton"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round" transform="matrix(-1 0 0 1 19 2)"><circle cx="8.5" cy="8.5" r="8"/><path d="M8.5 5.5v4H5"/></g></svg></div></a>
+  <div id="buttonSizer" class="rectButton buttonClose" onclick="buttonNav()"></div>
+</div>
+<div id="main" class="main">
+  <!-- content start -->
+<pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/lib/libcrypto.so.0.9.7</span></pre>
+<pre>613:_idgetpidOpenSSLDieCRYPTO_add_.</pre>
+<pre>613:lloc_cleanOPENSSL_cleanseCRYPTO.</pre>
+<pre>613:rcpylocaltimeSSLeay_versionCRY.</pre>
+<pre>613:ad_stringsOPENSSL_issetugidgetu.</pre>
+<pre>613:idgetegidOPENSSL_gmtimegmtime_.</pre>
+<pre>613:dDES_SPtransOSSL_libdes_version.</pre>
+<pre>613:OSSL_DES_versionDE.</pre>
+<pre>613:cbcm_encrypt_ossl_old_des_option.</pre>
+<pre>613:s_ossl_old_des_ecb3_e.</pre>
+<pre>613:ncrypt_ossl_old_des_cbc_ck.</pre>
+<pre>613:sum_ossl_old_des_cbc_en.</pre>
+<pre>613:crypt_ossl_old_des_ncbc_e.</pre>
+<pre>613:ncrypt_ossl_old_des_xcbc_e.</pre>
+<pre>613:ncrypt_ossl_old_des_cfb_en.</pre>
+<pre>613:crypt_ossl_old_des_ecb_en.</pre>
+<pre>613:crypt_ossl_old_des_encryp.</pre>
+<pre>613:t_ossl_old_des_encryp.</pre>
+<pre>613:t2_ossl_old_des_encryp.</pre>
+<pre>613:t3_ossl_old_des_decryp.</pre>
+<pre>613:t3_ossl_old_des_ede3_c.</pre>
+<pre>613:bc_encrypt_ossl_old_des_ede3_c.</pre>
+<pre>613:fb64_encrypt_ossl_old_des_ede3_o.</pre>
+<pre>613:fb64_encrypt_ossl_old_des_xwhite.</pre>
+<pre>613:_in2out_ossl_old_des_enc_re.</pre>
+<pre>613:ad_ossl_old_des_enc_wr.</pre>
+<pre>613:ite_ossl_old_des_fcrypt.</pre>
+<pre>613:_ossl_old_des_crypt.</pre>
+<pre>613:_ossl_old_crypt_oss.</pre>
+<pre>613:_ofb_encrypt_ossl_old_des_pcbc_e.</pre>
+<pre>613:ncrypt_ossl_old_des_quad_c.</pre>
+<pre>613:ksum_ossl_old_des_random.</pre>
+<pre>613:edRAND_seed_ossl_old_des_random.</pre>
+<pre>613:_key_ossl_old_des_read_p.</pre>
+<pre>613:swordDES_read_password_ossl_old_des_.</pre>
+<pre>613:read_2passwordsDES_read_2pas.</pre>
+<pre>613:swords_ossl_old_des_set_od.</pre>
+<pre>613:d_parity_ossl_old_des_is_wea.</pre>
+<pre>613:k_key_ossl_old_des_set_ke.</pre>
+<pre>613:y_ossl_old_des_key_sc.</pre>
+<pre>613:hed_ossl_old_des_string.</pre>
+<pre>613:_to_key_ossl_old_des_string.</pre>
+<pre>613:_to_2keys_ossl_old_des_cfb64_.</pre>
+<pre>613:encrypt_ossl_old_des_ofb64_.</pre>
+<pre>613:encrypt_ossl_096_des_random.</pre>
+<pre>613:ingsRSA_PKCS1_SSLeayRSA_padding.</pre>
+<pre>613:SA_padding_add_SSLv23RSA_padding.</pre>
+<pre>613:_padding_check_SSLv23RSA_padding.</pre>
+<pre>613:methodDSA_OpenSSLDSA_new_method.</pre>
+<pre>613:ute_keyDH_OpenSSLDH_versionDH_.</pre>
+<pre>613:DSO_METHOD_opensslDSO_freeDSO_u.</pre>
+<pre>613:NGINE_load_opensslRAND_SSLeayBI.</pre>
+<pre>613:D_versionrand_ssleay_methRAND_p.</pre>
+<pre>613:BytesToKeyOPENSSL_add_all_algori.</pre>
+<pre>613:thms_confOPENSSL_add_all_algori.</pre>
+<pre>613:hms_noconfOPENSSL_configEVP_CIP.</pre>
+<pre>613:P_enc_nullOpenSSL_add_all_cipher.</pre>
+<pre>613:sOpenSSL_add_all_digest.</pre>
+<pre>613:t_usr_dataOPENSSL_load_builtin_m.</pre>
+<pre>613:dulesexitOPENSSL_no_configTXT_.</pre>
+<pre>613:_methodUI_OpenSSLUI_get_method.</pre>
+<pre>613:ad_pw_string_ossl_old_des_read_p.</pre>
+<pre>613:w_string_ossl_old_des_read_p.</pre>
+<pre>2267:x509_storessl_ctxssl_cert.</pre>
+<pre>2267:ssl_sessionssl_sess_certss.</pre>
+<pre>2267:lssl_methodrand.</pre>
+<pre>2267:%s(%d): OpenSSL internal error.</pre>
+<pre>2271:d:%02d] OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2271: availableOPENSSLDIR: "/usr/loca.</pre>
+<pre>2271:l/ssl"not availa.</pre>
+<pre>2271:D2 part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2271:D4 part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2271:D5 part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2271:HA part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2271:A1 part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2271:60 part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2287:es part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2287:ES part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2289:C2 part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2289:C4 part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2289:C5 part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2289:EA part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2309:sh part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2339:ST part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2339:er part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2373:EC part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2373:SA part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2373:make with post SSLeay045.</pre>
+<pre>2374:SA_padding_add_SSLv23RSA_paddin.</pre>
+<pre>2374:_padding_check_SSLv23RSA_prin.</pre>
+<pre>2374:t supportedsslv3 rollback att.</pre>
+<pre>2374:k1.crsa_ssl.crsa_no.</pre>
+<pre>2374:SA part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2374:arametersOpenSSL DSA methodds.</pre>
+<pre>2374:a_ossl.cpglen.</pre>
+<pre>2374:n.cOpenSSL DH Methoddh.</pre>
+<pre>2374:an part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2374:e valueOpenSSL 'dlfcn' shared.</pre>
+<pre>2374:failed loading private keyfailed loadin.</pre>
+<pre>2374:gest.copensslSoftware engin.</pre>
+<pre>2374:(TEST_ENG_OPENSSL_PKEY)Loading P.</pre>
+<pre>2375:(TEST_ENG_OPENSSL_RC4) test_init.</pre>
+<pre>2376:llbackno keyprivate key algorithms dis.</pre>
+<pre>2381:h to the 'nuronssl' shared librar.</pre>
+<pre>2381:_nuron.cnuronsslUBSEC_C.</pre>
+<pre>2381:failed loading private keyfailed loadin.</pre>
+<pre>2421:ES part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2435:MEM_WRITESSL_newWSASTARTUP.</pre>
+<pre>2437:tcphttptelnetsockshttps.</pre>
+<pre>2437:sslftpgopherse.</pre>
+<pre>2437:ck part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2437:sh part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2457:ND part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2457:o read the OpenSSL FAQ, <a href="http://ww" title="http://ww" target="_blank" >http://ww</a>.</pre>
+<pre>2457:w.openssl.org/support/fa.</pre>
+<pre>2457:rand_methodSSLEAY_RAND_BYTES.</pre>
+<pre>2457:curve routinesSSL routinesBI.</pre>
+<pre>2457:O libEC libSSL libBIO libPK.</pre>
+<pre>2458:rechallengePasswordunstructured.</pre>
+<pre>2458: Policy UrlnsSslServerNameNets.</pre>
+<pre>2458:cape SSL Server Name.</pre>
+<pre>2458:eriodX509v3 Private Key Usage Periods.</pre>
+<pre>2458:pathtrustRootTrust Root.</pre>
+<pre>2458:Ssetct-BatchAdminReqDatasetct-B.</pre>
+<pre>2458:atchAdminResDatasetct-C.</pre>
+<pre>2458:TBEsetct-BatchAdminReqTBEsetct-B.</pre>
+<pre>2458:atchAdminResTBEsetct-R.</pre>
+<pre>2458:ionset-policy-rootsetCext-hashed.</pre>
+<pre>2458:RootsetCext-certT.</pre>
+<pre>2458:pabilitiesset-rootKeyThumbset.</pre>
+<pre>2458:VP part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2458:rfunsupported private key algorithmun.</pre>
+<pre>2458:es256MD5ssl2-md5ssl3-m.</pre>
+<pre>2458:d5ssl3-sha1SHA1.</pre>
+<pre>2521:vate-keyEnter Private Key password:SGCK.</pre>
+<pre>2526:.1 part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2526:t headerbad password readbad tag.</pre>
+<pre>2526:umber of charsprivate key header missing.</pre>
+<pre>2526: to decode rsa private keyunexpected .</pre>
+<pre>2526:509 CRLRSA PRIVATE KEYDSA PRIVATE KE.</pre>
+<pre>2526:EM part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2528:,ENCRYPTED PRIVATE KEYANY PRIVATE .</pre>
+<pre>2528:KEYPRIVATE KEYRSA PRIVATE KE.</pre>
+<pre>2528:YDSA PRIVATE KEYX509 CERTIFICA.</pre>
+<pre>2529:ERTIFICATERSA PRIVATE KEYRSA PUBLIC KEY.</pre>
+<pre>2529:UBLIC KEYDSA PRIVATE KEYDSA PARAMETERS.</pre>
+<pre>2529:v charsbad password readerror c.</pre>
+<pre>2529:onverting private keynot dek inf.</pre>
+<pre>2529:oblems getting passwordpublic key n.</pre>
+<pre>2529:.cENCRYPTED PRIVATE KEYPRIVATE KEY.</pre>
+<pre>2529:ANY PRIVATE KEYRSA PRIVATE KE.</pre>
+<pre>2529:YDSA PRIVATE KEYPRIVATE KEYEN.</pre>
+<pre>2529:CRYPTED PRIVATE KEYpem_pkey.c.</pre>
+<pre>2529:/usr/local/ssl/private/usr/.</pre>
+<pre>2529:local/ssl/usr/local/ss.</pre>
+<pre>2529:/usr/local/ssl/cert.pemSSL_C.</pre>
+<pre>2529:ERT_DIRSSL_CERT_FILE.</pre>
+<pre>2529:09 part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2529:compatibleSSL ClientSSL Se.</pre>
+<pre>2529:,name:SSL Clientclient.</pre>
+<pre>2529:SSL Serverserver.</pre>
+<pre>2529:dreservedSSL CAsslCAS/.</pre>
+<pre>2539:iveNameSSL clientsslcli.</pre>
+<pre>2539:entSSL serversslser.</pre>
+<pre>2539:verNetscape SSL servernssslse.</pre>
+<pre>2541:NF part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2541:ef part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2541:2003OpenSSL defaultWIN32.</pre>
+<pre>2543:openssl_confconf_m.</pre>
+<pre>2543:pathOPENSSL_initOPENSS.</pre>
+<pre>2543:h, path=OPENSSL_CONF/op.</pre>
+<pre>2543:enssl.cnf.</pre>
+<pre>2544:DB part of OpenSSL 0.9.7a Feb 19 .</pre>
+<pre>2545:OPENSSL_malloc failure.</pre>
+<pre>2547: parse errorprivate key does not match.</pre>
+<pre>2593:o revoked timeprivate key does not match.</pre>
+<pre>2593:cation dataroot ca not trusted.</pre>
+<pre>2593:to OpenSSL default user i.</pre>
+<pre>2594:ui_openssl.c/dev/tty.</pre>
+<pre>4642:es_old2.cread2pwd.crc2_ecb.crc.</pre>
+<pre>4642:rsa_pk1.crsa_ssl.crsa_none.cr.</pre>
+<pre>4642:r_reasonsdsa_ossl.copenssl_dsa_.</pre>
+<pre>4642:cdh_key.cdh_osslgenerate_keyc.</pre>
+<pre>4642:h_nulldso_openssl.cdso_win32.c.</pre>
+<pre>4642:igestseng_openssl.cengine_opens.</pre>
+<pre>4642:_idengine_openssl_nameopenssl_c.</pre>
+<pre>4642:iphersopenssl_digestsopenss.</pre>
+<pre>4642:utex_callbackspassword_contexthwcrhk.</pre>
+<pre>4642:locking_threadssleay_rand_seeds.</pre>
+<pre>4642:eay_rand_bytesssleay_rand_cleanu.</pre>
+<pre>4642:pssleay_rand_addss.</pre>
+<pre>4642:d_pseudo_bytesssleay_rand_status.</pre>
+<pre>4642:check_purpose_ssl_clientcheck_p.</pre>
+<pre>4642:urpose_ssl_servercheck_p.</pre>
+<pre>4642:urpose_ns_ssl_servercheck_p.</pre>
+<pre>4642:nid_cmpcheck_ssl_capurpose_smi.</pre>
+<pre>4642:conf_sap.copenssl_configuredtxt.</pre>
+<pre>4642:t_errorui_openssl.cui_opensslo.</pre>
+<pre>4642:OBJ_NAME_get_ossl_old_des_random.</pre>
+<pre>4642:bn_mul_words_ossl_old_des_enc_wr.</pre>
+<pre>4642:p_group_init_ossl_old_des_set_ke.</pre>
+<pre>4642:_X509_CINFOPENSSL_add_all_algori.</pre>
+<pre>4642:CS12_SAFEBAG_ossl_old_des_set_od.</pre>
+<pre>4642:host_orderOpenSSL_add_all_cipher.</pre>
+<pre>4642:reeOBJ_ln2nidSSLeay_versionPKC.</pre>
+<pre>4642:sn1_enc_save_ossl_old_des_key_sc.</pre>
+<pre>4642:9_SIG_newRAND_SSLeayc2i_ASN1_IN.</pre>
+<pre>4642:ONT_CTX_init_ossl_old_des_ncbc_e.</pre>
+<pre>4642:NVELOPE_free_ossl_old_des_ede3_o.</pre>
+<pre>4642:AC_Init_exOPENSSL_gmtimed2i_KRB.</pre>
+<pre>4642:1_get_object_ossl_old_des_encryp.</pre>
+<pre>4642:t_flagsUI_OpenSSLDH_versiond2i.</pre>
+<pre>4642:_DIGESTDH_OpenSSLEC_POINT_is_at.</pre>
+<pre>4642:i_ASN1_SETOPENSSL_add_all_algori.</pre>
+<pre>4642:RC5_version_ossl_old_des_string.</pre>
+<pre>4642:rivateKey_fp_ossl_old_des_ede3_c.</pre>
+<pre>4642:DSO_METHOD_opensslBN_kroneckerC.</pre>
+<pre>4642:ction_string_ossl_old_des_xwhite.</pre>
+<pre>4642:add0_revoked_ossl_old_des_decryp.</pre>
+<pre>4642:EVOKEDINFOOpenSSL_add_all_digest.</pre>
+<pre>4642:EMD4_Update_ossl_old_des_xcbc_e.</pre>
+<pre>4642:_default_pathsSSLeayKRB5_APREQ_.</pre>
+<pre>4642:ad_bio_PKCS7_ossl_old_des_enc_re.</pre>
+<pre>4642:_APREQBODYOPENSSL_load_builtin_m.</pre>
+<pre>4642:ceptv3_info_ossl_old_des_cbc_ck.</pre>
+<pre>4642:ND_file_name_ossl_old_cryptX509.</pre>
+<pre>4642:T_S_table5OPENSSL_issetugidBN_s.</pre>
+<pre>4642:X509_strings_ossl_old_des_string.</pre>
+<pre>4642:ttributesrand_ssleay_methERR_pe.</pre>
+<pre>4642:N_get_object_ossl_old_des_encryp.</pre>
+<pre>4642:ITY_KEYID_it_ossl_old_des_cbc_en.</pre>
+<pre>4642:rderDES_read_2passwordsNCONF_dump_bi.</pre>
+<pre>4642:RECP_CTX_set_ossl_old_des_cfb_en.</pre>
+<pre>4642:SA_padding_add_SSLv23AES_ecb_enc.</pre>
+<pre>4642:YID_newftellOSSL_DES_versionEV.</pre>
+<pre>4642:BN_mask_bits_ossl_old_des_encryp.</pre>
+<pre>4642:inding_offOpenSSLDiei2d_OCSP_SI.</pre>
+<pre>4642:_padding_check_SSLv23DES_cryptX.</pre>
+<pre>4642:l_cmd_string_ossl_old_des_read_2.</pre>
+<pre>4642:passwordsec_GFp_simple.</pre>
+<pre>4642:ad_DSAparams_ossl_old_des_read_p.</pre>
+<pre>4642:lockRSA_PKCS1_SSLeayX509_CRL_IN.</pre>
+<pre>4642:PKCS1_type_2_ossl_old_des_ecb3_e.</pre>
+<pre>4642:bio_X509_CRL_ossl_old_des_ofb64_.</pre>
+<pre>4642:_PUBKEY_itOPENSSL_cleanselh_new.</pre>
+<pre>4642:ND_cleanupOPENSSL_no_configX509.</pre>
+<pre>4642:fb64_encrypt_ossl_old_des_fcrypt.</pre>
+<pre>4642:NGINE_load_opensslASN1_ENUMERATE.</pre>
+<pre>4642:_to_X509_REQ_ossl_old_des_ofb_en.</pre>
+<pre>4642:rocalDES_read_passwordBIO_s_bioCONF.</pre>
+<pre>4642:GENERAL_NAME_ossl_old_des_random.</pre>
+<pre>4642:mul_comba4OPENSSL_configENGINE_.</pre>
+<pre>4642:NFOBIO_push_ossl_old_des_read_p.</pre>
+<pre>4642:_emailDSA_OpenSSLX509_TRUST_set.</pre>
+<pre>4642:reject_clear_ossl_096_des_random.</pre>
+<pre>4642:_set_ex_data_ossl_old_des_ecb_en.</pre>
+<pre>4642:_check_nonce_ossl_old_des_quad_c.</pre>
+<pre>4642:fb64_encrypt_ossl_old_des_is_wea.</pre>
+<pre>4642:2d_DSAparams_ossl_old_des_crypt.</pre>
+<pre>4642:_ossl_old_des_ede3_c.</pre>
+<pre>4642:CAST_S_table1OSSL_libdes_version.</pre>
+<pre>4642:HMAC_Update_ossl_old_des_pcbc_e.</pre>
+<pre>4642:TICEREF_free_ossl_old_des_read_p.</pre>
+<pre>4642:ry_egd_bytes_ossl_old_des_cfb64_.</pre>
+<pre>4642:DecryptFinal_ossl_old_des_option.</pre>
+  <!-- content end -->
+</div>
+
+<a href="https://github.com/e-m-b-a/emba" title="github.com/e-m-b-a/emba" target="_blank">
+  <div id="buttonInfo" class="rectButtonVisible">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" transform="translate(2 2)"><g stroke="white" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="8"/><path d="M8.5 12.5v-4h-1"/><path d="M7.5 12.5h2"/></g><circle cx="8.5" cy="5.5" fill="white" r="1"/></g></svg>
+  </div>
+</a>
+<div id="buttonBack" class="nonClickable rectButtonVisible"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><path d="M9.5 14.5l4-4l-4-4" fill="none" stroke="#444" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+<div id="buttonForward" class="nonClickable rectButtonVisible"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><path d="M11.5 14.5l-4-4l4-4" fill="none" stroke="#444" stroke-linecap="round" stroke-linejoin="round"/></svg></div> 
+<div id="buttonDown" class="rectButton" onclick="scrollDown()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.5l-4 4l-4-4"/><path d="M14.5 10.5l-4 4l-4-4"/></g></svg></div>
+<div id="buttonUp" class="rectButton" onclick="scrollUp()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 14.5l4-4l4 4"/><path d="M6.5 10.5l4-4l4 4"/></g></svg></div> 
+
+<script>
+window.onload = function () {
+  var buttons = document.getElementsByClassName("rectButton");
+  for (let i=0; i<buttons.length; i++) {
+    buttons[i].style.visibility = "visible";
+  }
+  var buttonDown = document.getElementById("buttonDown");
+  buttonDown.classList.add('rectButtonVisible');
+  buttonDown.classList.remove('rectButton');
+
+  var buttonUp = document.getElementById("buttonUp");
+  buttonUp.classList.add('rectButtonVisible');
+  buttonUp.classList.remove('rectButton');
+    
+  var buttonSizer = document.getElementById("buttonSizer");
+  buttonSizer.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 16.5v-4.978l-5-.022"/><path d="M18.5 2.5l-7 7"/><path d="M16.5 9.5l-5 .023V4.5"/><path d="M9.5 11.5l-7 7"/></g></svg>';
+  if (document.getElementById("buttonTime") !== null) {
+    var buttonTime = document.getElementById("buttonTime");
+    buttonTime.style.bottom = "50px";
+  }
+  document.getElementById("expand").value = "+ Show more results";
+  document.getElementById("expand").className += " expand";
+}
+
+function openNav() {
+  document.getElementById("sidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("nav").style.visibility = "visible";
+}
+
+function closeNav() {
+  document.getElementById("sidenav").style.width = "50px";
+  document.getElementById("sidenav").scrollTop = 0;
+  document.getElementById("main").style.marginLeft = "50px";
+  document.getElementById("nav").style.visibility = "hidden";
+}
+
+function scrollDown() {
+  window.scrollTo(0,document.body.scrollHeight);
+}
+
+function scrollUp() {
+  window.scrollTo(0,0);
+}
+
+function buttonNav() {
+  var button = document.getElementById("buttonSizer");
+  if ( button.classList.contains('buttonOpen') ) {
+    button.classList.remove('buttonOpen');
+    button.classList.add('buttonClose');
+    button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 16.5v-4.978l-5-.022"/><path d="M18.5 2.5l-7 7"/><path d="M16.5 9.5l-5 .023V4.5"/><path d="M9.5 11.5l-7 7"/></g></svg>';
+    openNav();
+  } else if( button.classList.contains('buttonClose') ) {
+    button.classList.remove('buttonClose');
+    button.classList.add('buttonOpen');
+    button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M18.5 7.5v-5h-5"/><path d="M18.5 2.5l-6 5.929"/><path d="M7.5 18.5l-5 .023V13.5"/><path d="M8.5 12.5l-6 6"/></g></svg>';
+    closeNav();
+  };
+}
+
+document.onkeydown = function(e) {
+    switch (e.keyCode) {
+      case 37:
+        document.getElementById("buttonForward").parentNode.click(); 
+        break;
+      case 39:
+        document.getElementById("buttonBack").parentNode.click();       
+        break;
+    }
+};
+</script>
+
+</body>
+</html>

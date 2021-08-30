@@ -30,37 +30,17 @@ Author(s): Michael Messner, Pascal Eckmann, Stefan Haboeck
     <a class="inherit" href="./index.html"><img class="inherit" src="./style/emba.svg" alt="emba logo"></a>
   </div>
   <div id="nav">
-      <a class="back hidden" href="./index.html">&laquo; Back to main</a>
+      <a class="back" href="./index.html">&laquo; Back to main</a>
+<a class="modul" href="#final_aggregator" title="#final_aggregator" >Final aggregator</a>
       <!-- navigation start -->
-<a class="modul p" data="p02" href="./p02_firmware_bin_file_check.html" title="./p02_firmware_bin_file_check.html">Binary firmware file analyzer</a>
-<a class="modul p" data="p20" href="./p20_firmware_bin_extractor.html" title="./p20_firmware_bin_extractor.html">Binary firmware extractor</a>
-<a class="modul p" data="p70" href="./p70_firmware_bin_base_analyzer.html" title="./p70_firmware_bin_base_analyzer.html">Binary firmware basic analyzer</a>
-<a class="modul s" data="s05" href="./s05_firmware_details.html" title="./s05_firmware_details.html">Firmware and testing details</a>
-<a class="modul s" data="s09" href="./s09_firmware_base_version_check.html" title="./s09_firmware_base_version_check.html">Binary firmware versions detection</a>
-<a class="modul s" data="s10" href="./s10_binaries_basic_check.html" title="./s10_binaries_basic_check.html">Check binaries for critical functions</a>
-<a class="modul s" data="s11" href="./s11_weak_func_check.html" title="./s11_weak_func_check.html">Check binaries for weak functions (intense)</a>
-<a class="modul s" data="s12" href="./s12_binary_protection.html" title="./s12_binary_protection.html">Check binary protection mechanisms</a>
-<a class="modul s" data="s15" href="./s15_bootloader_check.html" title="./s15_bootloader_check.html">Check bootloader and system startup</a>
-<a class="modul s" data="s30" href="./s30_version_vulnerability_check.html" title="./s30_version_vulnerability_check.html">Binary Vulnerability Check</a>
-<a class="modul s" data="s35" href="./s35_http_file_check.html" title="./s35_http_file_check.html">Check HTTP files</a>
-<a class="modul s" data="s45" href="./s45_pass_file_check.html" title="./s45_pass_file_check.html">Search password files</a>
-<a class="modul s" data="s65" href="./s65_config_file_check.html" title="./s65_config_file_check.html">Search/scan config files</a>
-<a class="modul s" data="s85" href="./s85_ssh_check.html" title="./s85_ssh_check.html">Check SSH</a>
-<a class="modul s" data="s95" href="./s95_interesting_binaries_check.html" title="./s95_interesting_binaries_check.html">Check interesting binaries</a>
-<a class="modul s" data="s100" href="./s100_command_inj_check.html" title="./s100_command_inj_check.html">Search areas for command injections</a>
-<a class="modul s" data="s103" href="./s103_deep_search.html" title="./s103_deep_search.html">Deep analysis of files for patterns</a>
-<a class="modul s" data="s106" href="./s106_deep_key_search.html" title="./s106_deep_key_search.html">Deep analysis of files for private keys</a>
-<a class="modul f" data="f19" href="./f19_cve_aggregator.html" title="./f19_cve_aggregator.html">Final CVE aggregator</a>
-<a class="modul f" data="f50" href="./f50_base_aggregator.html" title="./f50_base_aggregator.html">Final aggregator</a>
       <!-- navigation end -->
-      <input id="expand" class="expand_njs" type="button" value="More results:" onclick="this.value=this.value=='+ Show more results'?'- Hide more results':'+ Show more results';">
+      <input id="expand" class="expand_njs hidden" type="button" value="More results:" onclick="this.value=this.value=='+ Show more results'?'- Hide more results':'+ Show more results';">
       <div class="expand_area">
-<a class="etc" href=".//etc/common_linux_files.html" title=".//etc/common_linux_files.html">common_linux_files</a>
         <!-- etc start -->
         <!-- etc end -->
       </div>
   </div>
-  <a href="./emba.html"><div id="buttonTime" class="rectButton"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round" transform="matrix(-1 0 0 1 19 2)"><circle cx="8.5" cy="8.5" r="8"/><path d="M8.5 5.5v4H5"/></g></svg></div></a>
+  <a href="TIMELINK"><div id="buttonTimeInvisible" class="rectButton"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round" transform="matrix(-1 0 0 1 19 2)"><circle cx="8.5" cy="8.5" r="8"/><path d="M8.5 5.5v4H5"/></g></svg></div></a>
   <div id="buttonSizer" class="rectButton buttonClose" onclick="buttonNav()"></div>
 </div>
 <div id="main" class="main">
@@ -127,8 +107,8 @@ Author(s): Michael Messner, Pascal Eckmann, Stefan Haboeck
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" transform="translate(2 2)"><g stroke="white" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="8"/><path d="M8.5 12.5v-4h-1"/><path d="M7.5 12.5h2"/></g><circle cx="8.5" cy="5.5" fill="white" r="1"/></g></svg>
   </div>
 </a>
-<a href="./p02_firmware_bin_file_check.html" title="./p02_firmware_bin_file_check.html" ><div id="buttonBack" class="rectButtonVisible"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><path d="M9.5 14.5l4-4l-4-4" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/></svg></div></a>
-<div id="buttonForward" class="nonClickable rectButtonVisible"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><path d="M11.5 14.5l-4-4l4-4" fill="none" stroke="#444" stroke-linecap="round" stroke-linejoin="round"/></svg></div> 
+<div id="buttonBack" class="nonClickable rectButtonVisible"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><path d="M9.5 14.5l4-4l-4-4" fill="none" stroke="#444" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+<a href="./f19_cve_aggregator.html" title="./f19_cve_aggregator.html" ><div id="buttonForward" class="rectButtonVisible"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><path d="M11.5 14.5l-4-4l4-4" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/></svg></div> </a>
 <div id="buttonDown" class="rectButton" onclick="scrollDown()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.5l-4 4l-4-4"/><path d="M14.5 10.5l-4 4l-4-4"/></g></svg></div>
 <div id="buttonUp" class="rectButton" onclick="scrollUp()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 14.5l4-4l4 4"/><path d="M6.5 10.5l4-4l4 4"/></g></svg></div> 
 

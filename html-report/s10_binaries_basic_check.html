@@ -1,0 +1,362 @@
+<!-- 
+emba - EMBEDDED LINUX ANALYZER
+
+Copyright 2020-2021 Siemens AG
+Copyright 2020-2021 Siemens Energy AG
+
+emba comes with ABSOLUTELY NO WARRANTY. This is free software, and you are
+welcome to redistribute it under the terms of the GNU General Public License.
+See LICENSE file for usage of this software.
+
+emba is licensed under GPLv3
+
+Author(s): Michael Messner, Pascal Eckmann, Stefan Haboeck
+-->
+
+<!-- Used icons: https://github.com/CoreyGinnivan/system-uicons -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Emba firmware report</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style/style.css" type="text/css">
+</head>
+<body>
+
+<div id="sidenav" class="side">
+  <div class="logo">
+    <a class="inherit" href="./index.html"><img class="inherit" src="./style/emba.svg" alt="emba logo"></a>
+  </div>
+  <div id="nav">
+      <a class="back" href="./index.html">&laquo; Back to main</a>
+<a class="modul" href="#check_binaries_for_critical_functions" title="#check_binaries_for_critical_functions" >Check binaries for critical functions</a>
+      <!-- navigation start -->
+      <!-- navigation end -->
+      <input id="expand" class="expand_njs hidden" type="button" value="More results:" onclick="this.value=this.value=='+ Show more results'?'- Hide more results':'+ Show more results';">
+      <div class="expand_area">
+        <!-- etc start -->
+        <!-- etc end -->
+      </div>
+  </div>
+  <a href="TIMELINK"><div id="buttonTimeInvisible" class="rectButton"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round" transform="matrix(-1 0 0 1 19 2)"><circle cx="8.5" cy="8.5" r="8"/><path d="M8.5 5.5v4H5"/></g></svg></div></a>
+  <div id="buttonSizer" class="rectButton buttonClose" onclick="buttonNav()"></div>
+</div>
+<div id="main" class="main">
+  <!-- content start -->
+<pre>[</span><span class="blue">+</span>] </span><span class="cyan"><span class="bold"><a id="check_binaries_for_critical_functions">Check binaries for critical functions</a></span></pre>
+<pre><span class="bold"><hr class="double" /></span></pre>
+<pre>[</span><span class="orange">*</span>] Interesting functions: fprintf mmap printf sprintf strcat strcpy system</pre>
+<br />
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/ddnspn (-rwxr-xr-x root root) found:</span></pre>
+<pre>    00401160	DF	*UND*	00000000	sprintf</pre>
+<pre>    00401070	DF	*UND*	00000000	fprintf</pre>
+<pre>    00400ff0	DF	*UND*	00000000	system</pre>
+<pre>    00400f90	DF	*UND*	00000000	printf</pre>
+<pre>    00400f80	DF	*UND*	00000000	strcpy</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/busybox (-rwxr-xr-x root root) found:</span></pre>
+<pre>    00403ec0	DF	*UND*	00000000	sprintf</pre>
+<pre>    00403b10	DF	*UND*	00000000	strcat</pre>
+<pre>    00403ae0	DF	*UND*	00000000	fprintf</pre>
+<pre>    004038d0	DF	*UND*	00000000	system</pre>
+<pre>    004036c0	DF	*UND*	00000000	printf</pre>
+<pre>    00403670	DF	*UND*	00000000	strcpy</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/iptables (-rwxr-xr-x root root) found:</span></pre>
+<pre>    00401880	DF	*UND*	00000000	sprintf</pre>
+<pre>    00401790	DF	*UND*	00000000	strcat</pre>
+<pre>    00401780	DF	*UND*	00000000	fprintf</pre>
+<pre>    00401640	DF	*UND*	00000000	printf</pre>
+<pre>    00401630	DF	*UND*	00000000	strcpy</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/alpha_hostname (-rwxr-xr-x root root) found:</span></pre>
+<pre>    004005a0	DF	*UND*	00000000	sprintf</pre>
+<pre>    00400570	DF	*UND*	00000000	fprintf</pre>
+<pre>    00400560	DF	*UND*	00000000	system</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/neaps (-rwxr-xr-x root root) found:</span></pre>
+<pre>    00401520	DF	*UND*	00000000	sprintf</pre>
+<pre>    00401410	DF	*UND*	00000000	fprintf</pre>
+<pre>    004013a0	DF	*UND*	00000000	system</pre>
+<pre>    00401320	DF	*UND*	00000000	printf</pre>
+<pre>    004012f0	DF	*UND*	00000000	strcpy</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/xsupplicant (-rwxr-xr-x root root) found:</span></pre>
+<pre>    004078c0	DF	*UND*	00000000	sprintf</pre>
+<pre>    004075d0	DF	*UND*	00000000	strcat</pre>
+<pre>    004075c0	DF	*UND*	00000000	fprintf</pre>
+<pre>    00407230	DF	*UND*	00000000	printf</pre>
+<pre>    00407210	DF	*UND*	00000000	strcpy</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/upnpd (-rwxr-xr-x root root) found:</span></pre>
+<pre>    004067a0	DF	*UND*	00000000	sprintf</pre>
+<pre>    00406550	DF	*UND*	00000000	strcat</pre>
+<pre>    00406540	DF	*UND*	00000000	fprintf</pre>
+<pre>    004063e0	DF	*UND*	00000000	system</pre>
+<pre>    004062a0	DF	*UND*	00000000	printf</pre>
+<pre>    00406260	DF	*UND*	00000000	strcpy</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/webs (-rwxr-xr-x root root) found:</span></pre>
+<pre>    0040b530	DF	*UND*	00000000	sprintf</pre>
+<pre>    0040b200	DF	*UND*	00000000	strcat</pre>
+<pre>    0040b1d0	DF	*UND*	00000000	fprintf</pre>
+<pre>    0040b110	DF	*UND*	00000000	mmap</pre>
+<pre>    0040b020	DF	*UND*	00000000	system</pre>
+<pre>    0040ae60	DF	*UND*	00000000	printf</pre>
+<pre>    0040ade0	DF	*UND*	00000000	strcpy</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/dyndns (-rwxr-xr-x root root) found:</span></pre>
+<pre>    00400ce0	DF	*UND*	00000000	sprintf</pre>
+<pre>    00400c00	DF	*UND*	00000000	fprintf</pre>
+<pre>    00400ba0	DF	*UND*	00000000	system</pre>
+<pre>    00400b20	DF	*UND*	00000000	printf</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/dnrd (-rwxr-xr-x root root) found:</span></pre>
+<pre>    004021d0	DF	*UND*	00000000	sprintf</pre>
+<pre>    00402040	DF	*UND*	00000000	strcat</pre>
+<pre>    00402020	DF	*UND*	00000000	fprintf</pre>
+<pre>    00401f00	DF	*UND*	00000000	printf</pre>
+<pre>    00401ee0	DF	*UND*	00000000	strcpy</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/usbmon (-rwxr-xr-x root root) found:</span></pre>
+<pre>    00400800	DF	*UND*	00000000	sprintf</pre>
+<pre>    004007a0	DF	*UND*	00000000	fprintf</pre>
+<pre>    00400780	DF	*UND*	00000000	system</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/bpalogin (-rwxr-xr-x root root) found:</span></pre>
+<pre>    00401710	DF	*UND*	00000000	sprintf</pre>
+<pre>    004015d0	DF	*UND*	00000000	strcat</pre>
+<pre>    004015c0	DF	*UND*	00000000	fprintf</pre>
+<pre>    00401560	DF	*UND*	00000000	system</pre>
+<pre>    004014c0	DF	*UND*	00000000	printf</pre>
+<pre>    004014a0	DF	*UND*	00000000	strcpy</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/msntp (-rwxr-xr-x root root) found:</span></pre>
+<pre>    00401270	DF	*UND*	00000000	sprintf</pre>
+<pre>    00401140	DF	*UND*	00000000	fprintf</pre>
+<pre>    004010a0	DF	*UND*	00000000	system</pre>
+<pre>    00401040	DF	*UND*	00000000	printf</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/lpd (-rwxr-xr-x root root) found:</span></pre>
+<pre>    00408880	DF	*UND*	00000000	sprintf</pre>
+<pre>    00408580	DF	*UND*	00000000	strcat</pre>
+<pre>    00408560	DF	*UND*	00000000	fprintf</pre>
+<pre>    004083f0	DF	*UND*	00000000	system</pre>
+<pre>    00408290	DF	*UND*	00000000	strcpy</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/hotplug (-rwxr-xr-x root root) found:</span></pre>
+<pre>    00401370	DF	*UND*	00000000	sprintf</pre>
+<pre>    00401270	DF	*UND*	00000000	strcat</pre>
+<pre>    00401250	DF	*UND*	00000000	fprintf</pre>
+<pre>    00401240	DF	*UND*	00000000	mmap</pre>
+<pre>    00401160	DF	*UND*	00000000	strcpy</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/pppd (-rwxr-xr-x root root) found:</span></pre>
+<pre>    004043b0	DF	*UND*	00000000	sprintf</pre>
+<pre>    00404100	DF	*UND*	00000000	strcat</pre>
+<pre>    004040d0	DF	*UND*	00000000	fprintf</pre>
+<pre>    00403fa0	DF	*UND*	00000000	system</pre>
+<pre>    00403e20	DF	*UND*	00000000	printf</pre>
+<pre>    00403de0	DF	*UND*	00000000	strcpy</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/mDNSResponderPosix (-rwxr-xr-x root root) found:</span></pre>
+<pre>    00407200	DF	*UND*	00000000	fprintf</pre>
+<pre>    004070d0	DF	*UND*	00000000	strcpy</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/l2tpd (-rwxr-xr-x root root) found:</span></pre>
+<pre>    00402d90	DF	*UND*	00000000	sprintf</pre>
+<pre>    00402b80	DF	*UND*	00000000	strcat</pre>
+<pre>    00402b60	DF	*UND*	00000000	fprintf</pre>
+<pre>    004029e0	DF	*UND*	00000000	printf</pre>
+<pre>    004029c0	DF	*UND*	00000000	strcpy</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/pptp (-rwxr-xr-x root root) found:</span></pre>
+<pre>    00401260	DF	*UND*	00000000	fprintf</pre>
+<pre>    00401120	DF	*UND*	00000000	strcpy</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/tc (-rwxr-xr-x root root) found:</span></pre>
+<pre>    00402a70	DF	*UND*	00000000	sprintf</pre>
+<pre>    00402900	DF	*UND*	00000000	fprintf</pre>
+<pre>    004027b0	DF	*UND*	00000000	printf</pre>
+<pre>    00402790	DF	*UND*	00000000	strcpy</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/lld2d (-rwxr-xr-x root root) found:</span></pre>
+<pre>    00404470	DF	*UND*	00000000	strcat</pre>
+<pre>    00404450	DF	*UND*	00000000	fprintf</pre>
+<pre>    00404340	DF	*UND*	00000000	printf</pre>
+<pre>    00404320	DF	*UND*	00000000	strcpy</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/rawlpd (-rwxr-xr-x root root) found:</span></pre>
+<pre>    00402680	DF	*UND*	00000000	sprintf</pre>
+<pre>    00402530	DF	*UND*	00000000	fprintf</pre>
+<pre>    00402440	DF	*UND*	00000000	strcpy</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/xmlsetc (-rwxr-xr-x root root) found:</span></pre>
+<pre>    00400910	DF	*UND*	00000000	sprintf</pre>
+<pre>    004008c0	DF	*UND*	00000000	fprintf</pre>
+<pre>    00400830	DF	*UND*	00000000	strcpy</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/porttd (-rwxr-xr-x root root) found:</span></pre>
+<pre>    004008d0	DF	*UND*	00000000	sprintf</pre>
+<pre>    00400800	DF	*UND*	00000000	system</pre>
+<pre>    004007d0	DF	*UND*	00000000	printf</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/sh (-rwxr-xr-x root root) found:</span></pre>
+<pre>    004027a0	DF	*UND*	00000000	sprintf</pre>
+<pre>    00402500	DF	*UND*	00000000	strcat</pre>
+<pre>    004024d0	DF	*UND*	00000000	fprintf</pre>
+<pre>    00402470	DF	*UND*	00000000	mmap</pre>
+<pre>    004023a0	DF	*UND*	00000000	system</pre>
+<pre>    00402290	DF	*UND*	00000000	printf</pre>
+<pre>    00402240	DF	*UND*	00000000	strcpy</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/smtpclient (-rwxr-xr-x root root) found:</span></pre>
+<pre>    00402050	DF	*UND*	00000000	sprintf</pre>
+<pre>    00401f50	DF	*UND*	00000000	strcat</pre>
+<pre>    00401f40	DF	*UND*	00000000	fprintf</pre>
+<pre>    00401e80	DF	*UND*	00000000	printf</pre>
+<pre>    00401e70	DF	*UND*	00000000	strcpy</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/init (-rwxr-xr-x root root) found:</span></pre>
+<pre>    00400db0	DF	*UND*	00000000	strcat</pre>
+<pre>    00400cc0	DF	*UND*	00000000	strcpy</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/tcpreq (-rwxr-xr-x root root) found:</span></pre>
+<pre>    004009b0	DF	*UND*	00000000	sprintf</pre>
+<pre>    00400940	DF	*UND*	00000000	fprintf</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/syslogd (-rwxr-xr-x root root) found:</span></pre>
+<pre>    00400d40	DF	*UND*	00000000	strcat</pre>
+<pre>    00400d20	DF	*UND*	00000000	fprintf</pre>
+<pre>    00400c20	DF	*UND*	00000000	printf</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/alpha_reg (-rwxr-xr-x root root) found:</span></pre>
+<pre>    00400a80	DF	*UND*	00000000	sprintf</pre>
+<pre>    004009b0	DF	*UND*	00000000	strcat</pre>
+<pre>    004009a0	DF	*UND*	00000000	fprintf</pre>
+<pre>    00400990	DF	*UND*	00000000	system</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/cleshell (-rwxr-xr-x root root) found:</span></pre>
+<pre>    00400870	DF	*UND*	00000000	printf</pre>
+<pre>    00400850	DF	*UND*	00000000	strcpy</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/lib/libcrypt-0.9.26.so (-rw-r--r-- root root) found:</span></pre>
+<pre>    00000720	DF	*UND*	00000000	strcat</pre>
+<pre>    00000700	DF	*UND*	00000000	strcpy</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/lib/libuClibc-0.9.26.so (-rw-r--r-- root root) found:</span></pre>
+<pre>    00021920	g	DF	.text	00000000	printf</pre>
+<pre>    000350f0	w	DF	.text	00000000	system</pre>
+<pre>    00021980	g	DF	.text	00000000	sprintf</pre>
+<pre>    000263c0	g	DF	.text	00000000	strcat</pre>
+<pre>    000217e0	g	DF	.text	00000000	fprintf</pre>
+<pre>    0003b6d0	g	DF	.text	00000000	mmap</pre>
+<pre>    000264d0	g	DF	.text	00000000	strcpy</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/lib/libm-0.9.26.so (-rw-r--r-- root root) found:</span></pre>
+<pre>    000025c0	DF	*UND*	00000000	sprintf</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/lib/libpthread-0.9.26.so (-rw-r--r-- root root) found:</span></pre>
+<pre>    0000f848	w	DF	.text	00000000	system</pre>
+<pre>    00003740	DF	*UND*	00000000	fprintf</pre>
+<pre>    000036f0	DF	*UND*	00000000	mmap</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/lib/libutil-0.9.26.so (-rw-r--r-- root root) found:</span></pre>
+<pre>    00000970	DF	*UND*	00000000	strcpy</pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Interesting function in /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/lib/libcrypto.so.0.9.7 (-rwxr-xr-x root root) found:</span></pre>
+<pre>    0002a020	DF	*UND*	00000000	sprintf</pre>
+<pre>    00029e50	DF	*UND*	00000000	strcat</pre>
+<pre>    00029e40	DF	*UND*	00000000	fprintf</pre>
+<pre>    00029c30	DF	*UND*	00000000	strcpy</pre>
+<pre>[</span><span class="orange">*</span>] Found 37 binaries with interesting functions in 43 files (vulnerable functions: fprintf mmap printf sprintf strcat strcpy system)</pre>
+  <!-- content end -->
+</div>
+
+<a href="https://github.com/e-m-b-a/emba" title="github.com/e-m-b-a/emba" target="_blank">
+  <div id="buttonInfo" class="rectButtonVisible">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" transform="translate(2 2)"><g stroke="white" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="8"/><path d="M8.5 12.5v-4h-1"/><path d="M7.5 12.5h2"/></g><circle cx="8.5" cy="5.5" fill="white" r="1"/></g></svg>
+  </div>
+</a>
+<a href="./s11_weak_func_check.html" title="./s11_weak_func_check.html" ><div id="buttonBack" class="rectButtonVisible"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><path d="M9.5 14.5l4-4l-4-4" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/></svg></div></a>
+<a href="./s09_firmware_base_version_check.html" title="./s09_firmware_base_version_check.html" ><div id="buttonForward" class="rectButtonVisible"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><path d="M11.5 14.5l-4-4l4-4" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/></svg></div> </a>
+<div id="buttonDown" class="rectButton" onclick="scrollDown()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.5l-4 4l-4-4"/><path d="M14.5 10.5l-4 4l-4-4"/></g></svg></div>
+<div id="buttonUp" class="rectButton" onclick="scrollUp()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 14.5l4-4l4 4"/><path d="M6.5 10.5l4-4l4 4"/></g></svg></div> 
+
+<script>
+window.onload = function () {
+  var buttons = document.getElementsByClassName("rectButton");
+  for (let i=0; i<buttons.length; i++) {
+    buttons[i].style.visibility = "visible";
+  }
+  var buttonDown = document.getElementById("buttonDown");
+  buttonDown.classList.add('rectButtonVisible');
+  buttonDown.classList.remove('rectButton');
+
+  var buttonUp = document.getElementById("buttonUp");
+  buttonUp.classList.add('rectButtonVisible');
+  buttonUp.classList.remove('rectButton');
+    
+  var buttonSizer = document.getElementById("buttonSizer");
+  buttonSizer.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 16.5v-4.978l-5-.022"/><path d="M18.5 2.5l-7 7"/><path d="M16.5 9.5l-5 .023V4.5"/><path d="M9.5 11.5l-7 7"/></g></svg>';
+  if (document.getElementById("buttonTime") !== null) {
+    var buttonTime = document.getElementById("buttonTime");
+    buttonTime.style.bottom = "50px";
+  }
+  document.getElementById("expand").value = "+ Show more results";
+  document.getElementById("expand").className += " expand";
+}
+
+function openNav() {
+  document.getElementById("sidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("nav").style.visibility = "visible";
+}
+
+function closeNav() {
+  document.getElementById("sidenav").style.width = "50px";
+  document.getElementById("sidenav").scrollTop = 0;
+  document.getElementById("main").style.marginLeft = "50px";
+  document.getElementById("nav").style.visibility = "hidden";
+}
+
+function scrollDown() {
+  window.scrollTo(0,document.body.scrollHeight);
+}
+
+function scrollUp() {
+  window.scrollTo(0,0);
+}
+
+function buttonNav() {
+  var button = document.getElementById("buttonSizer");
+  if ( button.classList.contains('buttonOpen') ) {
+    button.classList.remove('buttonOpen');
+    button.classList.add('buttonClose');
+    button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 16.5v-4.978l-5-.022"/><path d="M18.5 2.5l-7 7"/><path d="M16.5 9.5l-5 .023V4.5"/><path d="M9.5 11.5l-7 7"/></g></svg>';
+    openNav();
+  } else if( button.classList.contains('buttonClose') ) {
+    button.classList.remove('buttonClose');
+    button.classList.add('buttonOpen');
+    button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M18.5 7.5v-5h-5"/><path d="M18.5 2.5l-6 5.929"/><path d="M7.5 18.5l-5 .023V13.5"/><path d="M8.5 12.5l-6 6"/></g></svg>';
+    closeNav();
+  };
+}
+
+document.onkeydown = function(e) {
+    switch (e.keyCode) {
+      case 37:
+        document.getElementById("buttonForward").parentNode.click(); 
+        break;
+      case 39:
+        document.getElementById("buttonBack").parentNode.click();       
+        break;
+    }
+};
+</script>
+
+</body>
+</html>

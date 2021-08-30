@@ -1,0 +1,501 @@
+<!-- 
+emba - EMBEDDED LINUX ANALYZER
+
+Copyright 2020-2021 Siemens AG
+Copyright 2020-2021 Siemens Energy AG
+
+emba comes with ABSOLUTELY NO WARRANTY. This is free software, and you are
+welcome to redistribute it under the terms of the GNU General Public License.
+See LICENSE file for usage of this software.
+
+emba is licensed under GPLv3
+
+Author(s): Michael Messner, Pascal Eckmann, Stefan Haboeck
+-->
+
+<!-- Used icons: https://github.com/CoreyGinnivan/system-uicons -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Emba firmware report</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style/style.css" type="text/css">
+</head>
+<body>
+
+<div id="sidenav" class="side">
+  <div class="logo">
+    <a class="inherit" href="./index.html"><img class="inherit" src="./style/emba.svg" alt="emba logo"></a>
+  </div>
+  <div id="nav">
+      <a class="back" href="./index.html">&laquo; Back to main</a>
+<a class="modul" href="#check_binaries_for_weak_functions_(intense)" title="#check_binaries_for_weak_functions_(intense)" >Check binaries for weak functions (intense)</a>
+      <!-- navigation start -->
+      <!-- navigation end -->
+      <input id="expand" class="expand_njs hidden" type="button" value="More results:" onclick="this.value=this.value=='+ Show more results'?'- Hide more results':'+ Show more results';">
+      <div class="expand_area">
+        <!-- etc start -->
+        <!-- etc end -->
+      </div>
+  </div>
+  <a href="TIMELINK"><div id="buttonTimeInvisible" class="rectButton"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round" transform="matrix(-1 0 0 1 19 2)"><circle cx="8.5" cy="8.5" r="8"/><path d="M8.5 5.5v4H5"/></g></svg></div></a>
+  <div id="buttonSizer" class="rectButton buttonClose" onclick="buttonNav()"></div>
+</div>
+<div id="main" class="main">
+  <!-- content start -->
+<pre>[</span><span class="blue">+</span>] </span><span class="cyan"><span class="bold">Check binaries for weak functions (intense)</span></pre>
+<pre><span class="bold"><hr class="double" /></span></pre>
+<pre>[</span><span class="orange">*</span>] Vulnerable functions: fprintf mmap printf sprintf strcat strcpy system</pre>
+<br />
+<a class="reference" href="./s11_weak_func_check/vul_func_1_fprintf-ddnspn.html" title="./s11_weak_func_check/vul_func_1_fprintf-ddnspn.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/ddnspn (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 1 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_2_printf-ddnspn.html" title="./s11_weak_func_check/vul_func_2_printf-ddnspn.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/ddnspn (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">printf </span>/ </span><span class="red">Function count: 2 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_13_sprintf-ddnspn.html" title="./s11_weak_func_check/vul_func_13_sprintf-ddnspn.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/ddnspn (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">sprintf </span>/ </span><span class="red">Function count: 13 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_5_strcpy-ddnspn.html" title="./s11_weak_func_check/vul_func_5_strcpy-ddnspn.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/ddnspn (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcpy </span>/ </span><span class="red">Function count: 5 </span>/ </span><span class="orange">strlen: 1 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_4_system-ddnspn.html" title="./s11_weak_func_check/vul_func_4_system-ddnspn.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/ddnspn (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">system </span>/ </span><span class="red">Function count: 4 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_13_fprintf-busybox.html" title="./s11_weak_func_check/vul_func_13_fprintf-busybox.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/busybox (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 13 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_66_printf-busybox.html" title="./s11_weak_func_check/vul_func_66_printf-busybox.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/busybox (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">printf </span>/ </span><span class="red">Function count: 66 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_23_sprintf-busybox.html" title="./s11_weak_func_check/vul_func_23_sprintf-busybox.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/busybox (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">sprintf </span>/ </span><span class="red">Function count: 23 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_3_strcat-busybox.html" title="./s11_weak_func_check/vul_func_3_strcat-busybox.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/busybox (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">strcat </span>/ </span><span class="red">Function count: 3 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_22_strcpy-busybox.html" title="./s11_weak_func_check/vul_func_22_strcpy-busybox.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/busybox (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">strcpy </span>/ </span><span class="red">Function count: 22 </span>/ </span><span class="orange">strlen: 0 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_2_system-busybox.html" title="./s11_weak_func_check/vul_func_2_system-busybox.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/busybox (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">system </span>/ </span><span class="red">Function count: 2 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_15_fprintf-iptables.html" title="./s11_weak_func_check/vul_func_15_fprintf-iptables.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/iptables (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 15 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_167_printf-iptables.html" title="./s11_weak_func_check/vul_func_167_printf-iptables.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/iptables (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">printf </span>/ </span><span class="red">Function count: 167 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_4_sprintf-iptables.html" title="./s11_weak_func_check/vul_func_4_sprintf-iptables.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/iptables (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">sprintf </span>/ </span><span class="red">Function count: 4 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_4_strcat-iptables.html" title="./s11_weak_func_check/vul_func_4_strcat-iptables.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/iptables (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">strcat </span>/ </span><span class="red">Function count: 4 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_16_strcpy-iptables.html" title="./s11_weak_func_check/vul_func_16_strcpy-iptables.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/iptables (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">strcpy </span>/ </span><span class="red">Function count: 16 </span>/ </span><span class="orange">strlen: 2 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_1_fprintf-alpha_hostname.html" title="./s11_weak_func_check/vul_func_1_fprintf-alpha_hostname.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/alpha_hostname (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 1 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_2_sprintf-alpha_hostname.html" title="./s11_weak_func_check/vul_func_2_sprintf-alpha_hostname.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/alpha_hostname (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">sprintf </span>/ </span><span class="red">Function count: 2 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_1_system-alpha_hostname.html" title="./s11_weak_func_check/vul_func_1_system-alpha_hostname.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/alpha_hostname (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">system </span>/ </span><span class="red">Function count: 1 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_17_fprintf-neaps.html" title="./s11_weak_func_check/vul_func_17_fprintf-neaps.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/neaps (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 17 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_7_printf-neaps.html" title="./s11_weak_func_check/vul_func_7_printf-neaps.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/neaps (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">printf </span>/ </span><span class="red">Function count: 7 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_16_sprintf-neaps.html" title="./s11_weak_func_check/vul_func_16_sprintf-neaps.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/neaps (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">sprintf </span>/ </span><span class="red">Function count: 16 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_12_strcpy-neaps.html" title="./s11_weak_func_check/vul_func_12_strcpy-neaps.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/neaps (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcpy </span>/ </span><span class="red">Function count: 12 </span>/ </span><span class="orange">strlen: 2 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_3_system-neaps.html" title="./s11_weak_func_check/vul_func_3_system-neaps.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/neaps (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">system </span>/ </span><span class="red">Function count: 3 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_2_fprintf-xsupplicant.html" title="./s11_weak_func_check/vul_func_2_fprintf-xsupplicant.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/xsupplicant (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 2 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_15_printf-xsupplicant.html" title="./s11_weak_func_check/vul_func_15_printf-xsupplicant.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/xsupplicant (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">printf </span>/ </span><span class="red">Function count: 15 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_8_sprintf-xsupplicant.html" title="./s11_weak_func_check/vul_func_8_sprintf-xsupplicant.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/xsupplicant (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">sprintf </span>/ </span><span class="red">Function count: 8 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_12_strcat-xsupplicant.html" title="./s11_weak_func_check/vul_func_12_strcat-xsupplicant.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/xsupplicant (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcat </span>/ </span><span class="red">Function count: 12 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_11_strcpy-xsupplicant.html" title="./s11_weak_func_check/vul_func_11_strcpy-xsupplicant.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/xsupplicant (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcpy </span>/ </span><span class="red">Function count: 11 </span>/ </span><span class="orange">strlen: 4 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_2_fprintf-upnpd.html" title="./s11_weak_func_check/vul_func_2_fprintf-upnpd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/upnpd (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 2 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_21_printf-upnpd.html" title="./s11_weak_func_check/vul_func_21_printf-upnpd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/upnpd (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">printf </span>/ </span><span class="red">Function count: 21 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_74_sprintf-upnpd.html" title="./s11_weak_func_check/vul_func_74_sprintf-upnpd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/upnpd (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">sprintf </span>/ </span><span class="red">Function count: 74 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_13_strcat-upnpd.html" title="./s11_weak_func_check/vul_func_13_strcat-upnpd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/upnpd (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcat </span>/ </span><span class="red">Function count: 13 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_79_strcpy-upnpd.html" title="./s11_weak_func_check/vul_func_79_strcpy-upnpd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/upnpd (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcpy </span>/ </span><span class="red">Function count: 79 </span>/ </span><span class="orange">strlen: 21 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_2_system-upnpd.html" title="./s11_weak_func_check/vul_func_2_system-upnpd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/upnpd (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">system </span>/ </span><span class="red">Function count: 2 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_295_fprintf-webs.html" title="./s11_weak_func_check/vul_func_295_fprintf-webs.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/webs (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 295 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_6_mmap-webs.html" title="./s11_weak_func_check/vul_func_6_mmap-webs.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/webs (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">mmap </span>/ </span><span class="red">Function count: 6 </span>/ </span><span class="orange">Correct error handling: 6 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_222_printf-webs.html" title="./s11_weak_func_check/vul_func_222_printf-webs.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/webs (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">printf </span>/ </span><span class="red">Function count: 222 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_272_sprintf-webs.html" title="./s11_weak_func_check/vul_func_272_sprintf-webs.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/webs (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">sprintf </span>/ </span><span class="red">Function count: 272 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_69_strcat-webs.html" title="./s11_weak_func_check/vul_func_69_strcat-webs.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/webs (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcat </span>/ </span><span class="red">Function count: 69 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_92_strcpy-webs.html" title="./s11_weak_func_check/vul_func_92_strcpy-webs.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/webs (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcpy </span>/ </span><span class="red">Function count: 92 </span>/ </span><span class="orange">strlen: 25 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_95_system-webs.html" title="./s11_weak_func_check/vul_func_95_system-webs.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/webs (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">system </span>/ </span><span class="red">Function count: 95 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_6_fprintf-dyndns.html" title="./s11_weak_func_check/vul_func_6_fprintf-dyndns.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/dyndns (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 6 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_6_printf-dyndns.html" title="./s11_weak_func_check/vul_func_6_printf-dyndns.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/dyndns (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">printf </span>/ </span><span class="red">Function count: 6 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_11_sprintf-dyndns.html" title="./s11_weak_func_check/vul_func_11_sprintf-dyndns.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/dyndns (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">sprintf </span>/ </span><span class="red">Function count: 11 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_5_system-dyndns.html" title="./s11_weak_func_check/vul_func_5_system-dyndns.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/dyndns (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">system </span>/ </span><span class="red">Function count: 5 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_11_fprintf-dnrd.html" title="./s11_weak_func_check/vul_func_11_fprintf-dnrd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/dnrd (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 11 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_1_printf-dnrd.html" title="./s11_weak_func_check/vul_func_1_printf-dnrd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/dnrd (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">printf </span>/ </span><span class="red">Function count: 1 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_2_sprintf-dnrd.html" title="./s11_weak_func_check/vul_func_2_sprintf-dnrd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/dnrd (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">sprintf </span>/ </span><span class="red">Function count: 2 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_4_strcat-dnrd.html" title="./s11_weak_func_check/vul_func_4_strcat-dnrd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/dnrd (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcat </span>/ </span><span class="red">Function count: 4 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_2_strcpy-dnrd.html" title="./s11_weak_func_check/vul_func_2_strcpy-dnrd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/dnrd (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcpy </span>/ </span><span class="red">Function count: 2 </span>/ </span><span class="orange">strlen: 1 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_3_fprintf-usbmon.html" title="./s11_weak_func_check/vul_func_3_fprintf-usbmon.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/usbmon (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 3 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_1_sprintf-usbmon.html" title="./s11_weak_func_check/vul_func_1_sprintf-usbmon.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/usbmon (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">sprintf </span>/ </span><span class="red">Function count: 1 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_1_system-usbmon.html" title="./s11_weak_func_check/vul_func_1_system-usbmon.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/usbmon (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">system </span>/ </span><span class="red">Function count: 1 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_1_fprintf-bpalogin.html" title="./s11_weak_func_check/vul_func_1_fprintf-bpalogin.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/bpalogin (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 1 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_4_printf-bpalogin.html" title="./s11_weak_func_check/vul_func_4_printf-bpalogin.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/bpalogin (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">printf </span>/ </span><span class="red">Function count: 4 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_3_sprintf-bpalogin.html" title="./s11_weak_func_check/vul_func_3_sprintf-bpalogin.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/bpalogin (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">sprintf </span>/ </span><span class="red">Function count: 3 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_3_strcat-bpalogin.html" title="./s11_weak_func_check/vul_func_3_strcat-bpalogin.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/bpalogin (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcat </span>/ </span><span class="red">Function count: 3 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_2_strcpy-bpalogin.html" title="./s11_weak_func_check/vul_func_2_strcpy-bpalogin.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/bpalogin (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcpy </span>/ </span><span class="red">Function count: 2 </span>/ </span><span class="orange">strlen: 0 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_2_system-bpalogin.html" title="./s11_weak_func_check/vul_func_2_system-bpalogin.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/bpalogin (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">system </span>/ </span><span class="red">Function count: 2 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_29_fprintf-msntp.html" title="./s11_weak_func_check/vul_func_29_fprintf-msntp.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/msntp (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 29 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_4_printf-msntp.html" title="./s11_weak_func_check/vul_func_4_printf-msntp.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/msntp (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">printf </span>/ </span><span class="red">Function count: 4 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_3_sprintf-msntp.html" title="./s11_weak_func_check/vul_func_3_sprintf-msntp.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/msntp (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">sprintf </span>/ </span><span class="red">Function count: 3 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_1_system-msntp.html" title="./s11_weak_func_check/vul_func_1_system-msntp.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/msntp (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">system </span>/ </span><span class="red">Function count: 1 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_114_fprintf-lpd.html" title="./s11_weak_func_check/vul_func_114_fprintf-lpd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/lpd (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 114 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_19_sprintf-lpd.html" title="./s11_weak_func_check/vul_func_19_sprintf-lpd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/lpd (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">sprintf </span>/ </span><span class="red">Function count: 19 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_32_strcat-lpd.html" title="./s11_weak_func_check/vul_func_32_strcat-lpd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/lpd (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">strcat </span>/ </span><span class="red">Function count: 32 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_16_strcpy-lpd.html" title="./s11_weak_func_check/vul_func_16_strcpy-lpd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/lpd (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">strcpy </span>/ </span><span class="red">Function count: 16 </span>/ </span><span class="orange">strlen: 1 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_3_system-lpd.html" title="./s11_weak_func_check/vul_func_3_system-lpd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/lpd (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">system </span>/ </span><span class="red">Function count: 3 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_87_fprintf-hotplug.html" title="./s11_weak_func_check/vul_func_87_fprintf-hotplug.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/hotplug (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 87 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_2_mmap-hotplug.html" title="./s11_weak_func_check/vul_func_2_mmap-hotplug.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/hotplug (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">mmap </span>/ </span><span class="red">Function count: 2 </span>/ </span><span class="orange">Correct error handling: 2 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_7_sprintf-hotplug.html" title="./s11_weak_func_check/vul_func_7_sprintf-hotplug.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/hotplug (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">sprintf </span>/ </span><span class="red">Function count: 7 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_4_strcat-hotplug.html" title="./s11_weak_func_check/vul_func_4_strcat-hotplug.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/hotplug (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcat </span>/ </span><span class="red">Function count: 4 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_10_strcpy-hotplug.html" title="./s11_weak_func_check/vul_func_10_strcpy-hotplug.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/hotplug (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcpy </span>/ </span><span class="red">Function count: 10 </span>/ </span><span class="orange">strlen: 1 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_15_fprintf-pppd.html" title="./s11_weak_func_check/vul_func_15_fprintf-pppd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/pppd (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 15 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_4_printf-pppd.html" title="./s11_weak_func_check/vul_func_4_printf-pppd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/pppd (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">printf </span>/ </span><span class="red">Function count: 4 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_11_sprintf-pppd.html" title="./s11_weak_func_check/vul_func_11_sprintf-pppd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/pppd (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">sprintf </span>/ </span><span class="red">Function count: 11 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_3_strcat-pppd.html" title="./s11_weak_func_check/vul_func_3_strcat-pppd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/pppd (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">strcat </span>/ </span><span class="red">Function count: 3 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_6_strcpy-pppd.html" title="./s11_weak_func_check/vul_func_6_strcpy-pppd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/pppd (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">strcpy </span>/ </span><span class="red">Function count: 6 </span>/ </span><span class="orange">strlen: 1 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_1_system-pppd.html" title="./s11_weak_func_check/vul_func_1_system-pppd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/pppd (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">system </span>/ </span><span class="red">Function count: 1 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_46_fprintf-mDNSResponderPosix.html" title="./s11_weak_func_check/vul_func_46_fprintf-mDNSResponderPosix.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/mDNSResponderPosix (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 46 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_1_strcpy-mDNSResponderPosix.html" title="./s11_weak_func_check/vul_func_1_strcpy-mDNSResponderPosix.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/mDNSResponderPosix (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcpy </span>/ </span><span class="red">Function count: 1 </span>/ </span><span class="orange">strlen: 0 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_12_fprintf-l2tpd.html" title="./s11_weak_func_check/vul_func_12_fprintf-l2tpd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/l2tpd (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 12 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_3_printf-l2tpd.html" title="./s11_weak_func_check/vul_func_3_printf-l2tpd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/l2tpd (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">printf </span>/ </span><span class="red">Function count: 3 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_2_sprintf-l2tpd.html" title="./s11_weak_func_check/vul_func_2_sprintf-l2tpd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/l2tpd (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">sprintf </span>/ </span><span class="red">Function count: 2 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_2_strcat-l2tpd.html" title="./s11_weak_func_check/vul_func_2_strcat-l2tpd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/l2tpd (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcat </span>/ </span><span class="red">Function count: 2 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_6_strcpy-l2tpd.html" title="./s11_weak_func_check/vul_func_6_strcpy-l2tpd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/l2tpd (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcpy </span>/ </span><span class="red">Function count: 6 </span>/ </span><span class="orange">strlen: 0 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_2_fprintf-pptp.html" title="./s11_weak_func_check/vul_func_2_fprintf-pptp.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/pptp (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 2 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_1_strcpy-pptp.html" title="./s11_weak_func_check/vul_func_1_strcpy-pptp.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/pptp (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">strcpy </span>/ </span><span class="red">Function count: 1 </span>/ </span><span class="orange">strlen: 1 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_230_fprintf-tc.html" title="./s11_weak_func_check/vul_func_230_fprintf-tc.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/tc (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 230 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_3_printf-tc.html" title="./s11_weak_func_check/vul_func_3_printf-tc.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/tc (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">printf </span>/ </span><span class="red">Function count: 3 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_2_sprintf-tc.html" title="./s11_weak_func_check/vul_func_2_sprintf-tc.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/tc (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">sprintf </span>/ </span><span class="red">Function count: 2 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_2_strcpy-tc.html" title="./s11_weak_func_check/vul_func_2_strcpy-tc.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/tc (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">strcpy </span>/ </span><span class="red">Function count: 2 </span>/ </span><span class="orange">strlen: 0 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_6_fprintf-lld2d.html" title="./s11_weak_func_check/vul_func_6_fprintf-lld2d.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/lld2d (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 6 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_1_printf-lld2d.html" title="./s11_weak_func_check/vul_func_1_printf-lld2d.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/lld2d (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">printf </span>/ </span><span class="red">Function count: 1 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_1_strcat-lld2d.html" title="./s11_weak_func_check/vul_func_1_strcat-lld2d.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/lld2d (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcat </span>/ </span><span class="red">Function count: 1 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_1_strcpy-lld2d.html" title="./s11_weak_func_check/vul_func_1_strcpy-lld2d.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/lld2d (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcpy </span>/ </span><span class="red">Function count: 1 </span>/ </span><span class="orange">strlen: 1 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_26_fprintf-rawlpd.html" title="./s11_weak_func_check/vul_func_26_fprintf-rawlpd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/rawlpd (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 26 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_4_sprintf-rawlpd.html" title="./s11_weak_func_check/vul_func_4_sprintf-rawlpd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/rawlpd (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">sprintf </span>/ </span><span class="red">Function count: 4 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_1_strcpy-rawlpd.html" title="./s11_weak_func_check/vul_func_1_strcpy-rawlpd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/rawlpd (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcpy </span>/ </span><span class="red">Function count: 1 </span>/ </span><span class="orange">strlen: 0 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_6_fprintf-xmlsetc.html" title="./s11_weak_func_check/vul_func_6_fprintf-xmlsetc.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/xmlsetc (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 6 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_1_sprintf-xmlsetc.html" title="./s11_weak_func_check/vul_func_1_sprintf-xmlsetc.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/xmlsetc (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">sprintf </span>/ </span><span class="red">Function count: 1 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_1_strcpy-xmlsetc.html" title="./s11_weak_func_check/vul_func_1_strcpy-xmlsetc.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/xmlsetc (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcpy </span>/ </span><span class="red">Function count: 1 </span>/ </span><span class="orange">strlen: 0 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_3_printf-porttd.html" title="./s11_weak_func_check/vul_func_3_printf-porttd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/porttd (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">printf </span>/ </span><span class="red">Function count: 3 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_1_sprintf-porttd.html" title="./s11_weak_func_check/vul_func_1_sprintf-porttd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/porttd (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">sprintf </span>/ </span><span class="red">Function count: 1 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_1_system-porttd.html" title="./s11_weak_func_check/vul_func_1_system-porttd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/porttd (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">system </span>/ </span><span class="red">Function count: 1 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_31_fprintf-sh.html" title="./s11_weak_func_check/vul_func_31_fprintf-sh.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/sh (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 31 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_1_mmap-sh.html" title="./s11_weak_func_check/vul_func_1_mmap-sh.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/sh (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">mmap </span>/ </span><span class="red">Function count: 1 </span>/ </span><span class="orange">Correct error handling: 1 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_60_printf-sh.html" title="./s11_weak_func_check/vul_func_60_printf-sh.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/sh (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">printf </span>/ </span><span class="red">Function count: 60 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_23_sprintf-sh.html" title="./s11_weak_func_check/vul_func_23_sprintf-sh.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/sh (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">sprintf </span>/ </span><span class="red">Function count: 23 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_9_strcat-sh.html" title="./s11_weak_func_check/vul_func_9_strcat-sh.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/sh (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">strcat </span>/ </span><span class="red">Function count: 9 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_12_strcpy-sh.html" title="./s11_weak_func_check/vul_func_12_strcpy-sh.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/sh (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">strcpy </span>/ </span><span class="red">Function count: 12 </span>/ </span><span class="orange">strlen: 1 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_7_system-sh.html" title="./s11_weak_func_check/vul_func_7_system-sh.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/sh (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">system </span>/ </span><span class="red">Function count: 7 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_2_fprintf-smtpclient.html" title="./s11_weak_func_check/vul_func_2_fprintf-smtpclient.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/smtpclient (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 2 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_1_printf-smtpclient.html" title="./s11_weak_func_check/vul_func_1_printf-smtpclient.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/smtpclient (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">printf </span>/ </span><span class="red">Function count: 1 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_2_sprintf-smtpclient.html" title="./s11_weak_func_check/vul_func_2_sprintf-smtpclient.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/smtpclient (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">sprintf </span>/ </span><span class="red">Function count: 2 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_5_strcat-smtpclient.html" title="./s11_weak_func_check/vul_func_5_strcat-smtpclient.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/smtpclient (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcat </span>/ </span><span class="red">Function count: 5 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_8_strcpy-smtpclient.html" title="./s11_weak_func_check/vul_func_8_strcpy-smtpclient.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/smtpclient (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcpy </span>/ </span><span class="red">Function count: 8 </span>/ </span><span class="orange">strlen: 5 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_4_strcat-init.html" title="./s11_weak_func_check/vul_func_4_strcat-init.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/init (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">strcat </span>/ </span><span class="red">Function count: 4 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_7_strcpy-init.html" title="./s11_weak_func_check/vul_func_7_strcpy-init.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/init (-rwxr-xr-x root root)</span><span class="cyan"> - common linux file: yes - </span> Vulnerable function: </span><span class="cyan">strcpy </span>/ </span><span class="red">Function count: 7 </span>/ </span><span class="orange">strlen: 0 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_3_fprintf-tcpreq.html" title="./s11_weak_func_check/vul_func_3_fprintf-tcpreq.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/tcpreq (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 3 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_2_sprintf-tcpreq.html" title="./s11_weak_func_check/vul_func_2_sprintf-tcpreq.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/tcpreq (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">sprintf </span>/ </span><span class="red">Function count: 2 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_2_fprintf-syslogd.html" title="./s11_weak_func_check/vul_func_2_fprintf-syslogd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/syslogd (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 2 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_2_printf-syslogd.html" title="./s11_weak_func_check/vul_func_2_printf-syslogd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/syslogd (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">printf </span>/ </span><span class="red">Function count: 2 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_5_strcat-syslogd.html" title="./s11_weak_func_check/vul_func_5_strcat-syslogd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/syslogd (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcat </span>/ </span><span class="red">Function count: 5 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_30_fprintf-alpha_reg.html" title="./s11_weak_func_check/vul_func_30_fprintf-alpha_reg.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/alpha_reg (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 30 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_6_sprintf-alpha_reg.html" title="./s11_weak_func_check/vul_func_6_sprintf-alpha_reg.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/alpha_reg (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">sprintf </span>/ </span><span class="red">Function count: 6 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_1_strcat-alpha_reg.html" title="./s11_weak_func_check/vul_func_1_strcat-alpha_reg.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/alpha_reg (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcat </span>/ </span><span class="red">Function count: 1 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_3_system-alpha_reg.html" title="./s11_weak_func_check/vul_func_3_system-alpha_reg.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/alpha_reg (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">system </span>/ </span><span class="red">Function count: 3 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_4_printf-cleshell.html" title="./s11_weak_func_check/vul_func_4_printf-cleshell.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/cleshell (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">printf </span>/ </span><span class="red">Function count: 4 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_3_strcpy-cleshell.html" title="./s11_weak_func_check/vul_func_3_strcpy-cleshell.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/cleshell (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcpy </span>/ </span><span class="red">Function count: 3 </span>/ </span><span class="orange">strlen: 0 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_1_strcat-libcrypt-0.9.26.so.html" title="./s11_weak_func_check/vul_func_1_strcat-libcrypt-0.9.26.so.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/lib/libcrypt-0.9.26.so (-rw-r--r-- root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcat </span>/ </span><span class="red">Function count: 1 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_1_strcpy-libcrypt-0.9.26.so.html" title="./s11_weak_func_check/vul_func_1_strcpy-libcrypt-0.9.26.so.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/lib/libcrypt-0.9.26.so (-rw-r--r-- root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcpy </span>/ </span><span class="red">Function count: 1 </span>/ </span><span class="orange">strlen: 0 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_2_sprintf-libm-0.9.26.so.html" title="./s11_weak_func_check/vul_func_2_sprintf-libm-0.9.26.so.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/lib/libm-0.9.26.so (-rw-r--r-- root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">sprintf </span>/ </span><span class="red">Function count: 2 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_3_fprintf-libpthread-0.9.26.so.html" title="./s11_weak_func_check/vul_func_3_fprintf-libpthread-0.9.26.so.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/lib/libpthread-0.9.26.so (-rw-r--r-- root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 3 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_2_mmap-libpthread-0.9.26.so.html" title="./s11_weak_func_check/vul_func_2_mmap-libpthread-0.9.26.so.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/lib/libpthread-0.9.26.so (-rw-r--r-- root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">mmap </span>/ </span><span class="red">Function count: 2 </span>/ </span><span class="orange">Correct error handling: 1 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_1_strcpy-libutil-0.9.26.so.html" title="./s11_weak_func_check/vul_func_1_strcpy-libutil-0.9.26.so.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/lib/libutil-0.9.26.so (-rw-r--r-- root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcpy </span>/ </span><span class="red">Function count: 1 </span>/ </span><span class="orange">strlen: 0 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_6_fprintf-libcrypto.so.0.9.7.html" title="./s11_weak_func_check/vul_func_6_fprintf-libcrypto.so.0.9.7.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/lib/libcrypto.so.0.9.7 (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">fprintf </span>/ </span><span class="red">Function count: 6 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_43_sprintf-libcrypto.so.0.9.7.html" title="./s11_weak_func_check/vul_func_43_sprintf-libcrypto.so.0.9.7.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/lib/libcrypto.so.0.9.7 (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">sprintf </span>/ </span><span class="red">Function count: 43 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_22_strcat-libcrypto.so.0.9.7.html" title="./s11_weak_func_check/vul_func_22_strcat-libcrypto.so.0.9.7.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/lib/libcrypto.so.0.9.7 (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcat </span>/ </span><span class="red">Function count: 22 </span></pre></a>
+<pre></span></pre>
+<a class="reference" href="./s11_weak_func_check/vul_func_12_strcpy-libcrypto.so.0.9.7.html" title="./s11_weak_func_check/vul_func_12_strcpy-libcrypto.so.0.9.7.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/lib/libcrypto.so.0.9.7 (-rwxr-xr-x root root)</span><span class="red"> - common linux file: no -</span> Vulnerable function: </span><span class="cyan">strcpy </span>/ </span><span class="red">Function count: 12 </span>/ </span><span class="orange">strlen: 8 </span></pre></a>
+<pre></span></pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> fprintf - top 10 results:</span></pre>
+<pre></span><span class="orange">	295   : webs            : common linux file: no</span></pre>
+<pre></span><span class="green">	230   : tc              : common linux file: yes</span></pre>
+<pre></span><span class="green">	114   : lpd             : common linux file: yes</span></pre>
+<pre></span><span class="orange">	87    : hotplug         : common linux file: no</span></pre>
+<pre></span><span class="orange">	46    : mDNSResponderPo : common linux file: no</span></pre>
+<pre></span><span class="green">	31    : sh              : common linux file: yes</span></pre>
+<pre></span><span class="orange">	30    : alpha_reg       : common linux file: no</span></pre>
+<pre></span><span class="orange">	29    : msntp           : common linux file: no</span></pre>
+<pre></span><span class="orange">	26    : rawlpd          : common linux file: no</span></pre>
+<pre></span><span class="orange">	17    : neaps           : common linux file: no</span></pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> mmap - top 10 results:</span></pre>
+<pre></span><span class="orange">	6     : webs            : common linux file: no</span></pre>
+<pre></span><span class="orange">	2     : libpthread-0.9. : common linux file: no</span></pre>
+<pre></span><span class="orange">	2     : hotplug         : common linux file: no</span></pre>
+<pre></span><span class="green">	1     : sh              : common linux file: yes</span></pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> printf - top 10 results:</span></pre>
+<pre></span><span class="orange">	222   : webs            : common linux file: no</span></pre>
+<pre></span><span class="green">	167   : iptables        : common linux file: yes</span></pre>
+<pre></span><span class="green">	66    : busybox         : common linux file: yes</span></pre>
+<pre></span><span class="green">	60    : sh              : common linux file: yes</span></pre>
+<pre></span><span class="orange">	21    : upnpd           : common linux file: no</span></pre>
+<pre></span><span class="orange">	15    : xsupplicant     : common linux file: no</span></pre>
+<pre></span><span class="orange">	7     : neaps           : common linux file: no</span></pre>
+<pre></span><span class="orange">	6     : dyndns          : common linux file: no</span></pre>
+<pre></span><span class="green">	4     : pppd            : common linux file: yes</span></pre>
+<pre></span><span class="orange">	4     : msntp           : common linux file: no</span></pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> sprintf - top 10 results:</span></pre>
+<pre></span><span class="orange">	272   : webs            : common linux file: no</span></pre>
+<pre></span><span class="orange">	74    : upnpd           : common linux file: no</span></pre>
+<pre></span><span class="orange">	43    : libcrypto.so.0. : common linux file: no</span></pre>
+<pre></span><span class="green">	23    : sh              : common linux file: yes</span></pre>
+<pre></span><span class="green">	23    : busybox         : common linux file: yes</span></pre>
+<pre></span><span class="green">	19    : lpd             : common linux file: yes</span></pre>
+<pre></span><span class="orange">	16    : neaps           : common linux file: no</span></pre>
+<pre></span><span class="orange">	13    : ddnspn          : common linux file: no</span></pre>
+<pre></span><span class="green">	11    : pppd            : common linux file: yes</span></pre>
+<pre></span><span class="orange">	11    : dyndns          : common linux file: no</span></pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> strcat - top 10 results:</span></pre>
+<pre></span><span class="orange">	69    : webs            : common linux file: no</span></pre>
+<pre></span><span class="green">	32    : lpd             : common linux file: yes</span></pre>
+<pre></span><span class="orange">	22    : libcrypto.so.0. : common linux file: no</span></pre>
+<pre></span><span class="orange">	13    : upnpd           : common linux file: no</span></pre>
+<pre></span><span class="orange">	12    : xsupplicant     : common linux file: no</span></pre>
+<pre></span><span class="green">	9     : sh              : common linux file: yes</span></pre>
+<pre></span><span class="orange">	5     : syslogd         : common linux file: no</span></pre>
+<pre></span><span class="orange">	5     : smtpclient      : common linux file: no</span></pre>
+<pre></span><span class="green">	4     : iptables        : common linux file: yes</span></pre>
+<pre></span><span class="green">	4     : init            : common linux file: yes</span></pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> strcpy - top 10 results:</span></pre>
+<a class="anc" id="anchor_strcpysummary"></a>
+<pre></span><span class="orange">	92    : webs            : common linux file: no</span></pre>
+<pre></span><span class="orange">	79    : upnpd           : common linux file: no</span></pre>
+<pre></span><span class="green">	22    : busybox         : common linux file: yes</span></pre>
+<pre></span><span class="green">	16    : lpd             : common linux file: yes</span></pre>
+<pre></span><span class="green">	16    : iptables        : common linux file: yes</span></pre>
+<pre></span><span class="green">	12    : sh              : common linux file: yes</span></pre>
+<pre></span><span class="orange">	12    : neaps           : common linux file: no</span></pre>
+<pre></span><span class="orange">	12    : libcrypto.so.0. : common linux file: no</span></pre>
+<pre></span><span class="orange">	11    : xsupplicant     : common linux file: no</span></pre>
+<pre></span><span class="orange">	10    : hotplug         : common linux file: no</span></pre>
+<br />
+<pre>[</span><span class="green">+</span>]</span><span class="green"> system - top 10 results:</span></pre>
+<pre></span><span class="orange">	95    : webs            : common linux file: no</span></pre>
+<pre></span><span class="green">	7     : sh              : common linux file: yes</span></pre>
+<pre></span><span class="orange">	5     : dyndns          : common linux file: no</span></pre>
+<pre></span><span class="orange">	4     : ddnspn          : common linux file: no</span></pre>
+<pre></span><span class="orange">	3     : neaps           : common linux file: no</span></pre>
+<pre></span><span class="green">	3     : lpd             : common linux file: yes</span></pre>
+<pre></span><span class="orange">	3     : alpha_reg       : common linux file: no</span></pre>
+<pre></span><span class="orange">	2     : upnpd           : common linux file: no</span></pre>
+<pre></span><span class="green">	2     : busybox         : common linux file: yes</span></pre>
+<pre></span><span class="orange">	2     : bpalogin        : common linux file: no</span></pre>
+<br />
+<br />
+  <!-- content end -->
+</div>
+
+<a href="https://github.com/e-m-b-a/emba" title="github.com/e-m-b-a/emba" target="_blank">
+  <div id="buttonInfo" class="rectButtonVisible">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" transform="translate(2 2)"><g stroke="white" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="8"/><path d="M8.5 12.5v-4h-1"/><path d="M7.5 12.5h2"/></g><circle cx="8.5" cy="5.5" fill="white" r="1"/></g></svg>
+  </div>
+</a>
+<a href="./s12_binary_protection.html" title="./s12_binary_protection.html" ><div id="buttonBack" class="rectButtonVisible"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><path d="M9.5 14.5l4-4l-4-4" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/></svg></div></a>
+<a href="./s10_binaries_basic_check.html" title="./s10_binaries_basic_check.html" ><div id="buttonForward" class="rectButtonVisible"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><path d="M11.5 14.5l-4-4l4-4" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/></svg></div> </a>
+<div id="buttonDown" class="rectButton" onclick="scrollDown()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.5l-4 4l-4-4"/><path d="M14.5 10.5l-4 4l-4-4"/></g></svg></div>
+<div id="buttonUp" class="rectButton" onclick="scrollUp()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 14.5l4-4l4 4"/><path d="M6.5 10.5l4-4l4 4"/></g></svg></div> 
+
+<script>
+window.onload = function () {
+  var buttons = document.getElementsByClassName("rectButton");
+  for (let i=0; i<buttons.length; i++) {
+    buttons[i].style.visibility = "visible";
+  }
+  var buttonDown = document.getElementById("buttonDown");
+  buttonDown.classList.add('rectButtonVisible');
+  buttonDown.classList.remove('rectButton');
+
+  var buttonUp = document.getElementById("buttonUp");
+  buttonUp.classList.add('rectButtonVisible');
+  buttonUp.classList.remove('rectButton');
+    
+  var buttonSizer = document.getElementById("buttonSizer");
+  buttonSizer.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 16.5v-4.978l-5-.022"/><path d="M18.5 2.5l-7 7"/><path d="M16.5 9.5l-5 .023V4.5"/><path d="M9.5 11.5l-7 7"/></g></svg>';
+  if (document.getElementById("buttonTime") !== null) {
+    var buttonTime = document.getElementById("buttonTime");
+    buttonTime.style.bottom = "50px";
+  }
+  document.getElementById("expand").value = "+ Show more results";
+  document.getElementById("expand").className += " expand";
+}
+
+function openNav() {
+  document.getElementById("sidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("nav").style.visibility = "visible";
+}
+
+function closeNav() {
+  document.getElementById("sidenav").style.width = "50px";
+  document.getElementById("sidenav").scrollTop = 0;
+  document.getElementById("main").style.marginLeft = "50px";
+  document.getElementById("nav").style.visibility = "hidden";
+}
+
+function scrollDown() {
+  window.scrollTo(0,document.body.scrollHeight);
+}
+
+function scrollUp() {
+  window.scrollTo(0,0);
+}
+
+function buttonNav() {
+  var button = document.getElementById("buttonSizer");
+  if ( button.classList.contains('buttonOpen') ) {
+    button.classList.remove('buttonOpen');
+    button.classList.add('buttonClose');
+    button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 16.5v-4.978l-5-.022"/><path d="M18.5 2.5l-7 7"/><path d="M16.5 9.5l-5 .023V4.5"/><path d="M9.5 11.5l-7 7"/></g></svg>';
+    openNav();
+  } else if( button.classList.contains('buttonClose') ) {
+    button.classList.remove('buttonClose');
+    button.classList.add('buttonOpen');
+    button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M18.5 7.5v-5h-5"/><path d="M18.5 2.5l-6 5.929"/><path d="M7.5 18.5l-5 .023V13.5"/><path d="M8.5 12.5l-6 6"/></g></svg>';
+    closeNav();
+  };
+}
+
+document.onkeydown = function(e) {
+    switch (e.keyCode) {
+      case 37:
+        document.getElementById("buttonForward").parentNode.click(); 
+        break;
+      case 39:
+        document.getElementById("buttonBack").parentNode.click();       
+        break;
+    }
+};
+</script>
+
+</body>
+</html>

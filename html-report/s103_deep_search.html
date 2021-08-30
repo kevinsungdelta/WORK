@@ -1,0 +1,1032 @@
+<!-- 
+emba - EMBEDDED LINUX ANALYZER
+
+Copyright 2020-2021 Siemens AG
+Copyright 2020-2021 Siemens Energy AG
+
+emba comes with ABSOLUTELY NO WARRANTY. This is free software, and you are
+welcome to redistribute it under the terms of the GNU General Public License.
+See LICENSE file for usage of this software.
+
+emba is licensed under GPLv3
+
+Author(s): Michael Messner, Pascal Eckmann, Stefan Haboeck
+-->
+
+<!-- Used icons: https://github.com/CoreyGinnivan/system-uicons -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Emba firmware report</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style/style.css" type="text/css">
+</head>
+<body>
+
+<div id="sidenav" class="side">
+  <div class="logo">
+    <a class="inherit" href="./index.html"><img class="inherit" src="./style/emba.svg" alt="emba logo"></a>
+  </div>
+  <div id="nav">
+      <a class="back" href="./index.html">&laquo; Back to main</a>
+<a class="modul" href="#deep_analysis_of_files_for_patterns" title="#deep_analysis_of_files_for_patterns" >Deep analysis of files for patterns</a>
+      <!-- navigation start -->
+      <!-- navigation end -->
+      <input id="expand" class="expand_njs hidden" type="button" value="More results:" onclick="this.value=this.value=='+ Show more results'?'- Hide more results':'+ Show more results';">
+      <div class="expand_area">
+        <!-- etc start -->
+        <!-- etc end -->
+      </div>
+  </div>
+  <a href="TIMELINK"><div id="buttonTimeInvisible" class="rectButton"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round" transform="matrix(-1 0 0 1 19 2)"><circle cx="8.5" cy="8.5" r="8"/><path d="M8.5 5.5v4H5"/></g></svg></div></a>
+  <div id="buttonSizer" class="rectButton buttonClose" onclick="buttonNav()"></div>
+</div>
+<div id="main" class="main">
+  <!-- content start -->
+<pre>[</span><span class="blue">+</span>] </span><span class="cyan"><span class="bold"><a id="deep_analysis_of_files_for_patterns">Deep analysis of files for patterns</a></span></pre>
+<pre><span class="bold"><hr class="double" /></span></pre>
+<pre>[</span><span class="orange">*</span>] Patterns: admin dropbear passwd password private key pwd root ssl telnet upgrade</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_tools_log_setting.htm.html" title="./s103_deep_search/deep_search_tools_log_setting.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/Tools/tools_log_setting.htm</span></pre></a>
+<pre>    8	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_4_l2tp.js.html" title="./s103_deep_search/deep_search_wiz_wan_4_l2tp.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/spanish/wiz_wan_4_l2tp.js</span></pre></a>
+<pre>    1	:	password</pre>
+<pre>    1	:	pwd</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_st_stats.js.html" title="./s103_deep_search/deep_search_st_stats.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/st_stats.js</span></pre></a>
+<pre>    2	:	admin</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_permission.js.html" title="./s103_deep_search/deep_search_permission.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/german/permission.js</span></pre></a>
+<pre>    1	:	admin</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_init.html" title="./s103_deep_search/deep_search_init.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/init</span></pre></a>
+<pre>    2	:	password</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_msg_wiz_wlan_0_flowchart.js.html" title="./s103_deep_search/deep_search_msg_wiz_wlan_0_flowchart.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/msg_wiz_wlan_0_flowchart.js</span></pre></a>
+<pre>    1	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_h_tools_ddns.htm.html" title="./s103_deep_search/deep_search_h_tools_ddns.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/help/h_tools_ddns.htm</span></pre></a>
+<pre>    2	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_4_pppoe.js.html" title="./s103_deep_search/deep_search_wiz_wan_4_pppoe.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/german/wiz_wan_4_pppoe.js</span></pre></a>
+<pre>    1	:	password</pre>
+<pre>    1	:	pwd</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_1_password.js.html" title="./s103_deep_search/deep_search_wiz_wan_1_password.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/german/wiz_wan_1_password.js</span></pre></a>
+<pre>    4	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_tools_admin.js.html" title="./s103_deep_search/deep_search_tools_admin.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/german/tools_admin.js</span></pre></a>
+<pre>    3	:	admin</pre>
+<pre>    4	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_spt_tools.htm.html" title="./s103_deep_search/deep_search_spt_tools.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/french/support/spt_tools.htm</span></pre></a>
+<pre>    10	:	admin</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_wiz_wan_0_flowchart.htm.html" title="./s103_deep_search/deep_search_dsc_wiz_wan_0_flowchart.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/dsc/dsc_wiz_wan_0_flowchart.htm</span></pre></a>
+<pre>    1	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_adv_port.htm.html" title="./s103_deep_search/deep_search_adv_port.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/Advance/adv_port.htm</span></pre></a>
+<pre>    1	:	root</pre>
+<pre>    1	:	telnet</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_wiz_wan_4_l2tp.htm.html" title="./s103_deep_search/deep_search_dsc_wiz_wan_4_l2tp.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/dsc/dsc_wiz_wan_4_l2tp.htm</span></pre></a>
+<pre>    2	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_tcpreq.html" title="./s103_deep_search/deep_search_tcpreq.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/tcpreq</span></pre></a>
+<pre>    1	:	passwd</pre>
+<pre>    1	:	root</pre>
+<pre>    1	:	upgrade</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_msg_menu.js.html" title="./s103_deep_search/deep_search_msg_menu.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/french/msg_menu.js</span></pre></a>
+<pre>    1	:	admin</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_4_pppoe.js.html" title="./s103_deep_search/deep_search_wiz_wan_4_pppoe.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/french/wiz_wan_4_pppoe.js</span></pre></a>
+<pre>    2	:	password</pre>
+<pre>    2	:	pwd</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_wiz_wan_1_password.htm.html" title="./s103_deep_search/deep_search_dsc_wiz_wan_1_password.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/dsc/dsc_wiz_wan_1_password.htm</span></pre></a>
+<pre>    1	:	admin</pre>
+<pre>    4	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_msg_menu.js.html" title="./s103_deep_search/deep_search_msg_menu.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/german/msg_menu.js</span></pre></a>
+<pre>    2	:	admin</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_wiz_wlan_0_flowchart.htm.html" title="./s103_deep_search/deep_search_dsc_wiz_wlan_0_flowchart.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/dsc/dsc_wiz_wlan_0_flowchart.htm</span></pre></a>
+<pre>    1	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_spt_bsc.htm.html" title="./s103_deep_search/deep_search_spt_bsc.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/support/spt_bsc.htm</span></pre></a>
+<pre>    10	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wlan_3_set_sec.js.html" title="./s103_deep_search/deep_search_wiz_wlan_3_set_sec.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/wiz_wlan_3_set_sec.js</span></pre></a>
+<pre>    6	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_tools_log_setting.htm.html" title="./s103_deep_search/deep_search_dsc_tools_log_setting.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/dsc/dsc_tools_log_setting.htm</span></pre></a>
+<pre>    1	:	admin</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wlan_3_sec.js.html" title="./s103_deep_search/deep_search_wiz_wlan_3_sec.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/german/wiz_wlan_3_sec.js</span></pre></a>
+<pre>    2	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_wiz_wan_4_pptp.htm.html" title="./s103_deep_search/deep_search_dsc_wiz_wan_4_pptp.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/dsc/dsc_wiz_wan_4_pptp.htm</span></pre></a>
+<pre>    2	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_tools_firmware.js.html" title="./s103_deep_search/deep_search_tools_firmware.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/german/tools_firmware.js</span></pre></a>
+<pre>    1	:	root</pre>
+<pre>    6	:	upgrade</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_webs.html" title="./s103_deep_search/deep_search_webs.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/webs</span></pre></a>
+<pre>    3	:	admin</pre>
+<pre>    3	:	passwd</pre>
+<pre>    21	:	password</pre>
+<pre>    12	:	root</pre>
+<pre>    1	:	ssl</pre>
+<pre>    4	:	telnet</pre>
+<pre>    5	:	upgrade</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_4_bigpond.htm.html" title="./s103_deep_search/deep_search_wiz_wan_4_bigpond.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/Home/wiz_wan_4_bigpond.htm</span></pre></a>
+<pre>    10	:	password</pre>
+<pre>    3	:	pwd</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_tools_ddns.js.html" title="./s103_deep_search/deep_search_tools_ddns.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/tools_ddns.js</span></pre></a>
+<pre>    2	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_excanvas.js.html" title="./s103_deep_search/deep_search_excanvas.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/Status/chart/includes/excanvas.js</span></pre></a>
+<pre>    1	:	root</pre>
+<pre>    2	:	ssl</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_1_password.js.html" title="./s103_deep_search/deep_search_wiz_wan_1_password.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/wiz_wan_1_password.js</span></pre></a>
+<pre>    10	:	password</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_spt_menu.htm.html" title="./s103_deep_search/deep_search_spt_menu.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/spanish/support/spt_menu.htm</span></pre></a>
+<pre>    1	:	admin</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_msg_comm.js.html" title="./s103_deep_search/deep_search_msg_comm.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/german/msg_comm.js</span></pre></a>
+<pre>    1	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_wiz_wlan_0_flowchart.htm.html" title="./s103_deep_search/deep_search_dsc_wiz_wlan_0_flowchart.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/dsc/dsc_wiz_wlan_0_flowchart.htm</span></pre></a>
+<pre>    2	:	password</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_4_bigpond.js.html" title="./s103_deep_search/deep_search_wiz_wan_4_bigpond.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/german/wiz_wan_4_bigpond.js</span></pre></a>
+<pre>    2	:	password</pre>
+<pre>    1	:	pwd</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_3_sel_wan.js.html" title="./s103_deep_search/deep_search_wiz_wan_3_sel_wan.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/wiz_wan_3_sel_wan.js</span></pre></a>
+<pre>    7	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_wiz_wan_4_pppoe.htm.html" title="./s103_deep_search/deep_search_dsc_wiz_wan_4_pppoe.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/dsc/dsc_wiz_wan_4_pppoe.htm</span></pre></a>
+<pre>    2	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_st_stats.js.html" title="./s103_deep_search/deep_search_st_stats.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/german/st_stats.js</span></pre></a>
+<pre>    4	:	admin</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_bsc_wlan.htm.html" title="./s103_deep_search/deep_search_bsc_wlan.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/Home/bsc_wlan.htm</span></pre></a>
+<pre>    6	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_tools_admin.htm.html" title="./s103_deep_search/deep_search_dsc_tools_admin.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/spanish/dsc/dsc_tools_admin.htm</span></pre></a>
+<pre>    3	:	admin</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search___menu.js.html" title="./s103_deep_search/deep_search___menu.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/comm/__menu.js</span></pre></a>
+<pre>    1	:	admin</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_wiz_wan_1_password.htm.html" title="./s103_deep_search/deep_search_dsc_wiz_wan_1_password.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/spanish/dsc/dsc_wiz_wan_1_password.htm</span></pre></a>
+<pre>    2	:	admin</pre>
+<pre>    5	:	password</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_tools_firmware.htm.html" title="./s103_deep_search/deep_search_tools_firmware.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/Tools/tools_firmware.htm</span></pre></a>
+<pre>    1	:	root</pre>
+<pre>    2	:	upgrade</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_4_pptp.js.html" title="./s103_deep_search/deep_search_wiz_wan_4_pptp.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/wiz_wan_4_pptp.js</span></pre></a>
+<pre>    3	:	password</pre>
+<pre>    1	:	pwd</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_tools_log_setting.js.html" title="./s103_deep_search/deep_search_tools_log_setting.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/spanish/tools_log_setting.js</span></pre></a>
+<pre>    1	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_permission.js.html" title="./s103_deep_search/deep_search_permission.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/french/permission.js</span></pre></a>
+<pre>    2	:	admin</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_4_l2tp.js.html" title="./s103_deep_search/deep_search_wiz_wan_4_l2tp.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/german/wiz_wan_4_l2tp.js</span></pre></a>
+<pre>    2	:	password</pre>
+<pre>    2	:	pwd</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_st_stats.js.html" title="./s103_deep_search/deep_search_st_stats.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/st_stats.js</span></pre></a>
+<pre>    6	:	admin</pre>
+<pre>    3	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_4_pppoe.js.html" title="./s103_deep_search/deep_search_wiz_wan_4_pppoe.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/wiz_wan_4_pppoe.js</span></pre></a>
+<pre>    4	:	password</pre>
+<pre>    3	:	pwd</pre>
+<pre>    3	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_4_l2tp.js.html" title="./s103_deep_search/deep_search_wiz_wan_4_l2tp.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/wiz_wan_4_l2tp.js</span></pre></a>
+<pre>    5	:	password</pre>
+<pre>    3	:	pwd</pre>
+<pre>    3	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_3_sel_wan.js.html" title="./s103_deep_search/deep_search_wiz_wan_3_sel_wan.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/german/wiz_wan_3_sel_wan.js</span></pre></a>
+<pre>    7	:	password</pre>
+<pre>    2	:	root</pre>
+<pre>    4	:	ssl</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_h_tools_admin.htm.html" title="./s103_deep_search/deep_search_h_tools_admin.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/help/h_tools_admin.htm</span></pre></a>
+<pre>    2	:	admin</pre>
+<pre>    2	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_spt_tools.htm.html" title="./s103_deep_search/deep_search_spt_tools.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/support/spt_tools.htm</span></pre></a>
+<pre>    12	:	admin</pre>
+<pre>    5	:	password</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_tools_log_setting.htm.html" title="./s103_deep_search/deep_search_dsc_tools_log_setting.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/spanish/dsc/dsc_tools_log_setting.htm</span></pre></a>
+<pre>    2	:	admin</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_smtpclient.html" title="./s103_deep_search/deep_search_smtpclient.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/smtpclient</span></pre></a>
+<pre>    1	:	passwd</pre>
+<pre>    4	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_1_password.js.html" title="./s103_deep_search/deep_search_wiz_wan_1_password.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/wiz_wan_1_password.js</span></pre></a>
+<pre>    15	:	password</pre>
+<pre>    3	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_bsc_wan.js.html" title="./s103_deep_search/deep_search_bsc_wan.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/german/bsc_wan.js</span></pre></a>
+<pre>    4	:	password</pre>
+<pre>    3	:	pwd</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_libuClibc-0.9.26.so.html" title="./s103_deep_search/deep_search_libuClibc-0.9.26.so.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/lib/libuClibc-0.9.26.so</span></pre></a>
+<pre>    4	:	passwd</pre>
+<pre>    2	:	pwd</pre>
+<pre>    3	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_5_save.htm.html" title="./s103_deep_search/deep_search_wiz_wan_5_save.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/Home/wiz_wan_5_save.htm</span></pre></a>
+<pre>    1	:	admin</pre>
+<pre>    8	:	password</pre>
+<pre>    8	:	pwd</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_tools_admin.htm.html" title="./s103_deep_search/deep_search_tools_admin.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/Tools/tools_admin.htm</span></pre></a>
+<pre>    27	:	admin</pre>
+<pre>    35	:	password</pre>
+<pre>    5	:	pwd</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_busybox.html" title="./s103_deep_search/deep_search_busybox.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/busybox</span></pre></a>
+<pre>    5	:	root</pre>
+<pre>    3	:	telnet</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_wiz_wan_1_password.htm.html" title="./s103_deep_search/deep_search_dsc_wiz_wan_1_password.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/dsc/dsc_wiz_wan_1_password.htm</span></pre></a>
+<pre>    2	:	admin</pre>
+<pre>    9	:	password</pre>
+<pre>    3	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_lpd.html" title="./s103_deep_search/deep_search_lpd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/lpd</span></pre></a>
+<pre>    2	:	password</pre>
+<pre>    1	:	pwd</pre>
+<pre>    15	:	root</pre>
+<pre>    22	:	ssl</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_menu.js.html" title="./s103_deep_search/deep_search_menu.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/menu.js</span></pre></a>
+<pre>    1	:	admin</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_1_password.js.html" title="./s103_deep_search/deep_search_wiz_wan_1_password.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/spanish/wiz_wan_1_password.js</span></pre></a>
+<pre>    19	:	password</pre>
+<pre>    4	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_wiz_wan_1_password.htm.html" title="./s103_deep_search/deep_search_dsc_wiz_wan_1_password.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/german/dsc/dsc_wiz_wan_1_password.htm</span></pre></a>
+<pre>    3	:	admin</pre>
+<pre>    10	:	password</pre>
+<pre>    4	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_tools_ddns.js.html" title="./s103_deep_search/deep_search_tools_ddns.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/spanish/tools_ddns.js</span></pre></a>
+<pre>    4	:	password</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wlan_3_set_sec.js.html" title="./s103_deep_search/deep_search_wiz_wlan_3_set_sec.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/spanish/wiz_wlan_3_set_sec.js</span></pre></a>
+<pre>    11	:	password</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_tools_ddns.js.html" title="./s103_deep_search/deep_search_tools_ddns.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/german/tools_ddns.js</span></pre></a>
+<pre>    6	:	password</pre>
+<pre>    3	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wlan_3.htm.html" title="./s103_deep_search/deep_search_wiz_wlan_3.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/Home/wiz_wlan_3.htm</span></pre></a>
+<pre>    2	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_tools_log_setting.js.html" title="./s103_deep_search/deep_search_tools_log_setting.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/french/tools_log_setting.js</span></pre></a>
+<pre>    2	:	password</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_picsconnSCPD.xml.html" title="./s103_deep_search/deep_search_picsconnSCPD.xml.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/etc/pseudoicsd/picsconnSCPD.xml</span></pre></a>
+<pre>    1	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_login_fail.js.html" title="./s103_deep_search/deep_search_login_fail.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/login_fail.js</span></pre></a>
+<pre>    1	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dnrd.html" title="./s103_deep_search/deep_search_dnrd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/dnrd</span></pre></a>
+<pre>    3	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_rc.html" title="./s103_deep_search/deep_search_rc.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/etc/rc</span></pre></a>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_tools_admin.htm.html" title="./s103_deep_search/deep_search_dsc_tools_admin.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/dsc/dsc_tools_admin.htm</span></pre></a>
+<pre>    4	:	admin</pre>
+<pre>    1	:	password</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_xsupplicant.html" title="./s103_deep_search/deep_search_xsupplicant.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/xsupplicant</span></pre></a>
+<pre>    1	:	admin</pre>
+<pre>    2	:	passwd</pre>
+<pre>    28	:	password</pre>
+<pre>    4	:	private key</pre>
+<pre>    1	:	pwd</pre>
+<pre>    24	:	root</pre>
+<pre>    52	:	ssl</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_tools_admin.js.html" title="./s103_deep_search/deep_search_tools_admin.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/tools_admin.js</span></pre></a>
+<pre>    6	:	admin</pre>
+<pre>    10	:	password</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_4_bigpond.js.html" title="./s103_deep_search/deep_search_wiz_wan_4_bigpond.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/wiz_wan_4_bigpond.js</span></pre></a>
+<pre>    5	:	password</pre>
+<pre>    2	:	pwd</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_4_l2tp.js.html" title="./s103_deep_search/deep_search_wiz_wan_4_l2tp.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/french/wiz_wan_4_l2tp.js</span></pre></a>
+<pre>    6	:	password</pre>
+<pre>    4	:	pwd</pre>
+<pre>    4	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_msg_comm.js.html" title="./s103_deep_search/deep_search_msg_comm.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/msg_comm.js</span></pre></a>
+<pre>    2	:	password</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_tools_log_setting.js.html" title="./s103_deep_search/deep_search_tools_log_setting.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/tools_log_setting.js</span></pre></a>
+<pre>    7	:	password</pre>
+<pre>    3	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_bsc_wan.js.html" title="./s103_deep_search/deep_search_bsc_wan.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/bsc_wan.js</span></pre></a>
+<pre>    16	:	password</pre>
+<pre>    6	:	pwd</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_tools_ddns.htm.html" title="./s103_deep_search/deep_search_tools_ddns.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/Tools/tools_ddns.htm</span></pre></a>
+<pre>    9	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search___tree.js.html" title="./s103_deep_search/deep_search___tree.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/comm/__tree.js</span></pre></a>
+<pre>    2	:	admin</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dyndns.html" title="./s103_deep_search/deep_search_dyndns.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/dyndns</span></pre></a>
+<pre>    1	:	admin</pre>
+<pre>    4	:	password</pre>
+<pre>    1	:	pwd</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_tools_admin.js.html" title="./s103_deep_search/deep_search_tools_admin.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/spanish/tools_admin.js</span></pre></a>
+<pre>    9	:	admin</pre>
+<pre>    14	:	password</pre>
+<pre>    3	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_tools_ddns.js.html" title="./s103_deep_search/deep_search_tools_ddns.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/tools_ddns.js</span></pre></a>
+<pre>    8	:	password</pre>
+<pre>    4	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_menu.js.html" title="./s103_deep_search/deep_search_menu.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/french/menu.js</span></pre></a>
+<pre>    2	:	admin</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wdhttp.sh.html" title="./s103_deep_search/deep_search_wdhttp.sh.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/etc/wdhttp.sh</span></pre></a>
+<pre>    10	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_menu.js.html" title="./s103_deep_search/deep_search_menu.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/german/menu.js</span></pre></a>
+<pre>    3	:	admin</pre>
+<pre>    3	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_upnpd.html" title="./s103_deep_search/deep_search_upnpd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/upnpd</span></pre></a>
+<pre>    11	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_frm.htm.html" title="./s103_deep_search/deep_search_wiz_wan_frm.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/Home/wiz_wan_frm.htm</span></pre></a>
+<pre>    1	:	admin</pre>
+<pre>    6	:	password</pre>
+<pre>    4	:	pwd</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_tc.html" title="./s103_deep_search/deep_search_tc.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/tc</span></pre></a>
+<pre>    15	:	root</pre>
+<pre>    1	:	ssl</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_3_sel_wan.js.html" title="./s103_deep_search/deep_search_wiz_wan_3_sel_wan.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/wiz_wan_3_sel_wan.js</span></pre></a>
+<pre>    14	:	password</pre>
+<pre>    3	:	root</pre>
+<pre>    4	:	ssl</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_1.htm.html" title="./s103_deep_search/deep_search_wiz_wan_1.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/Home/wiz_wan_1.htm</span></pre></a>
+<pre>    2	:	admin</pre>
+<pre>    20	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_4_pptp.js.html" title="./s103_deep_search/deep_search_wiz_wan_4_pptp.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/spanish/wiz_wan_4_pptp.js</span></pre></a>
+<pre>    4	:	password</pre>
+<pre>    2	:	pwd</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_spt_menu.htm.html" title="./s103_deep_search/deep_search_spt_menu.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/french/support/spt_menu.htm</span></pre></a>
+<pre>    2	:	admin</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_picsdesc.skl.html" title="./s103_deep_search/deep_search_picsdesc.skl.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/etc/pseudoicsd/picsdesc.skl</span></pre></a>
+<pre>    3	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_4_l2tp.htm.html" title="./s103_deep_search/deep_search_wiz_wan_4_l2tp.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/Home/wiz_wan_4_l2tp.htm</span></pre></a>
+<pre>    12	:	password</pre>
+<pre>    3	:	pwd</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_spt_bsc.htm.html" title="./s103_deep_search/deep_search_spt_bsc.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/support/spt_bsc.htm</span></pre></a>
+<pre>    20	:	password</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_msg_comm.js.html" title="./s103_deep_search/deep_search_msg_comm.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/spanish/msg_comm.js</span></pre></a>
+<pre>    3	:	password</pre>
+<pre>    3	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_msg_menu.js.html" title="./s103_deep_search/deep_search_msg_menu.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/msg_menu.js</span></pre></a>
+<pre>    3	:	admin</pre>
+<pre>    3	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_ddnspn.html" title="./s103_deep_search/deep_search_ddnspn.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/ddnspn</span></pre></a>
+<pre>    5	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_tools_admin.js.html" title="./s103_deep_search/deep_search_tools_admin.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/tools_admin.js</span></pre></a>
+<pre>    12	:	admin</pre>
+<pre>    19	:	password</pre>
+<pre>    4	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_4_pppoe.htm.html" title="./s103_deep_search/deep_search_wiz_wan_4_pppoe.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/Home/wiz_wan_4_pppoe.htm</span></pre></a>
+<pre>    12	:	password</pre>
+<pre>    2	:	pwd</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_1_password.js.html" title="./s103_deep_search/deep_search_wiz_wan_1_password.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/french/wiz_wan_1_password.js</span></pre></a>
+<pre>    23	:	password</pre>
+<pre>    5	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_st_status.js.html" title="./s103_deep_search/deep_search_st_status.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/spanish/st_status.js</span></pre></a>
+<pre>    2	:	admin</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_4_pppoe.js.html" title="./s103_deep_search/deep_search_wiz_wan_4_pppoe.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/spanish/wiz_wan_4_pppoe.js</span></pre></a>
+<pre>    5	:	password</pre>
+<pre>    4	:	pwd</pre>
+<pre>    4	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_4_pptp.js.html" title="./s103_deep_search/deep_search_wiz_wan_4_pptp.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/french/wiz_wan_4_pptp.js</span></pre></a>
+<pre>    5	:	password</pre>
+<pre>    3	:	pwd</pre>
+<pre>    3	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_bsc_wan.js.html" title="./s103_deep_search/deep_search_bsc_wan.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/bsc_wan.js</span></pre></a>
+<pre>    28	:	password</pre>
+<pre>    9	:	pwd</pre>
+<pre>    3	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_fwcheck_nonvs.htm.html" title="./s103_deep_search/deep_search_fwcheck_nonvs.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/Tools/fwcheck_nonvs.htm</span></pre></a>
+<pre>    1	:	root</pre>
+<pre>    2	:	upgrade</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_tools_admin.htm.html" title="./s103_deep_search/deep_search_dsc_tools_admin.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/dsc/dsc_tools_admin.htm</span></pre></a>
+<pre>    7	:	admin</pre>
+<pre>    2	:	password</pre>
+<pre>    3	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_sup_menu2.htm.html" title="./s103_deep_search/deep_search_dsc_sup_menu2.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/dsc/dsc_sup_menu2.htm</span></pre></a>
+<pre>    1	:	admin</pre>
+<pre>    1	:	root</pre>
+<pre>    1	:	upgrade</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_tools_firmware.htm.html" title="./s103_deep_search/deep_search_dsc_tools_firmware.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/dsc/dsc_tools_firmware.htm</span></pre></a>
+<pre>    1	:	root</pre>
+<pre>    4	:	upgrade</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_tools_admin.htm.html" title="./s103_deep_search/deep_search_dsc_tools_admin.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/french/dsc/dsc_tools_admin.htm</span></pre></a>
+<pre>    10	:	admin</pre>
+<pre>    2	:	password</pre>
+<pre>    4	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_tools_firmware.js.html" title="./s103_deep_search/deep_search_tools_firmware.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/tools_firmware.js</span></pre></a>
+<pre>    2	:	root</pre>
+<pre>    12	:	upgrade</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_iptables.html" title="./s103_deep_search/deep_search_iptables.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/iptables</span></pre></a>
+<pre>    2	:	root</pre>
+<pre>    1	:	upgrade</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_sup_menu2.htm.html" title="./s103_deep_search/deep_search_dsc_sup_menu2.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/spanish/dsc/dsc_sup_menu2.htm</span></pre></a>
+<pre>    2	:	admin</pre>
+<pre>    2	:	root</pre>
+<pre>    1	:	upgrade</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_passwd.html" title="./s103_deep_search/deep_search_passwd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/etc/passwd</span></pre></a>
+<pre>    1	:	passwd</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_h_tools_admin.htm.html" title="./s103_deep_search/deep_search_h_tools_admin.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/spanish/help/h_tools_admin.htm</span></pre></a>
+<pre>    4	:	admin</pre>
+<pre>    2	:	password</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_permission.js.html" title="./s103_deep_search/deep_search_permission.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/spanish/permission.js</span></pre></a>
+<pre>    3	:	admin</pre>
+<pre>    3	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_4_pppoe.js.html" title="./s103_deep_search/deep_search_wiz_wan_4_pppoe.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/wiz_wan_4_pppoe.js</span></pre></a>
+<pre>    8	:	password</pre>
+<pre>    5	:	pwd</pre>
+<pre>    5	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_menu.js.html" title="./s103_deep_search/deep_search_menu.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/menu.js</span></pre></a>
+<pre>    4	:	admin</pre>
+<pre>    4	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_wiz_wan_4_l2tp.htm.html" title="./s103_deep_search/deep_search_dsc_wiz_wan_4_l2tp.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/dsc/dsc_wiz_wan_4_l2tp.htm</span></pre></a>
+<pre>    4	:	password</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_msg_menu.js.html" title="./s103_deep_search/deep_search_msg_menu.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/spanish/msg_menu.js</span></pre></a>
+<pre>    4	:	admin</pre>
+<pre>    4	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_permission.js.html" title="./s103_deep_search/deep_search_permission.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/permission.js</span></pre></a>
+<pre>    4	:	admin</pre>
+<pre>    4	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_bpalogin.html" title="./s103_deep_search/deep_search_bpalogin.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/bpalogin</span></pre></a>
+<pre>    4	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_wiz_wan_4_bigpond.htm.html" title="./s103_deep_search/deep_search_dsc_wiz_wan_4_bigpond.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/dsc/dsc_wiz_wan_4_bigpond.htm</span></pre></a>
+<pre>    2	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_msg_menu.js.html" title="./s103_deep_search/deep_search_msg_menu.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/msg_menu.js</span></pre></a>
+<pre>    5	:	admin</pre>
+<pre>    5	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_tools_log_setting.htm.html" title="./s103_deep_search/deep_search_dsc_tools_log_setting.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/french/dsc/dsc_tools_log_setting.htm</span></pre></a>
+<pre>    3	:	admin</pre>
+<pre>    3	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_msg_comm.js.html" title="./s103_deep_search/deep_search_msg_comm.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/msg_comm.js</span></pre></a>
+<pre>    4	:	password</pre>
+<pre>    4	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_login.htm.html" title="./s103_deep_search/deep_search_login.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/public/login.htm</span></pre></a>
+<pre>    2	:	passwd</pre>
+<pre>    9	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_spt_tools.htm.html" title="./s103_deep_search/deep_search_spt_tools.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/support/spt_tools.htm</span></pre></a>
+<pre>    19	:	admin</pre>
+<pre>    9	:	password</pre>
+<pre>    3	:	root</pre>
+<pre>    3	:	upgrade</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wlan_3_sec.js.html" title="./s103_deep_search/deep_search_wiz_wlan_3_sec.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/french/wiz_wlan_3_sec.js</span></pre></a>
+<pre>    4	:	password</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_bsc_internet_wan.htm.html" title="./s103_deep_search/deep_search_bsc_internet_wan.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/Home/bsc_internet_wan.htm</span></pre></a>
+<pre>    85	:	password</pre>
+<pre>    5	:	pwd</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_wiz_wan_4_pppoe.htm.html" title="./s103_deep_search/deep_search_dsc_wiz_wan_4_pppoe.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/dsc/dsc_wiz_wan_4_pppoe.htm</span></pre></a>
+<pre>    4	:	password</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_wiz_wan_1_password.htm.html" title="./s103_deep_search/deep_search_dsc_wiz_wan_1_password.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/french/dsc/dsc_wiz_wan_1_password.htm</span></pre></a>
+<pre>    4	:	admin</pre>
+<pre>    11	:	password</pre>
+<pre>    5	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_tools_firmware.js.html" title="./s103_deep_search/deep_search_tools_firmware.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/french/tools_firmware.js</span></pre></a>
+<pre>    3	:	root</pre>
+<pre>    18	:	upgrade</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_4_bigpond.js.html" title="./s103_deep_search/deep_search_wiz_wan_4_bigpond.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/french/wiz_wan_4_bigpond.js</span></pre></a>
+<pre>    7	:	password</pre>
+<pre>    3	:	pwd</pre>
+<pre>    3	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_spt_tools.htm.html" title="./s103_deep_search/deep_search_spt_tools.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/german/support/spt_tools.htm</span></pre></a>
+<pre>    26	:	admin</pre>
+<pre>    10	:	password</pre>
+<pre>    4	:	root</pre>
+<pre>    3	:	upgrade</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_libcrypto.so.0.9.7.html" title="./s103_deep_search/deep_search_libcrypto.so.0.9.7.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/lib/libcrypto.so.0.9.7</span></pre></a>
+<pre>    4	:	admin</pre>
+<pre>    11	:	password</pre>
+<pre>    21	:	private key</pre>
+<pre>    1	:	pwd</pre>
+<pre>    6	:	root</pre>
+<pre>    223	:	ssl</pre>
+<pre>    1	:	telnet</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_tools_admin.js.html" title="./s103_deep_search/deep_search_tools_admin.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/french/tools_admin.js</span></pre></a>
+<pre>    15	:	admin</pre>
+<pre>    23	:	password</pre>
+<pre>    5	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_msg_comm.js.html" title="./s103_deep_search/deep_search_msg_comm.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/french/msg_comm.js</span></pre></a>
+<pre>    5	:	password</pre>
+<pre>    5	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_mDNSResponderPosix.html" title="./s103_deep_search/deep_search_mDNSResponderPosix.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/mDNSResponderPosix</span></pre></a>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_4_bigpond.js.html" title="./s103_deep_search/deep_search_wiz_wan_4_bigpond.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/spanish/wiz_wan_4_bigpond.js</span></pre></a>
+<pre>    9	:	password</pre>
+<pre>    4	:	pwd</pre>
+<pre>    4	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_wiz_wan_0_flowchart.htm.html" title="./s103_deep_search/deep_search_dsc_wiz_wan_0_flowchart.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/dsc/dsc_wiz_wan_0_flowchart.htm</span></pre></a>
+<pre>    2	:	password</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_CoregaRouterConfig.xml.html" title="./s103_deep_search/deep_search_CoregaRouterConfig.xml.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/etc/pseudoicsd/CoregaRouterConfig.xml</span></pre></a>
+<pre>    12	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_spt_menu.htm.html" title="./s103_deep_search/deep_search_spt_menu.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/support/spt_menu.htm</span></pre></a>
+<pre>    3	:	admin</pre>
+<pre>    3	:	root</pre>
+<pre>    1	:	upgrade</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_spt_tools.htm.html" title="./s103_deep_search/deep_search_spt_tools.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/spanish/support/spt_tools.htm</span></pre></a>
+<pre>    33	:	admin</pre>
+<pre>    10	:	password</pre>
+<pre>    5	:	root</pre>
+<pre>    3	:	upgrade</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_permission.js.html" title="./s103_deep_search/deep_search_permission.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/permission.js</span></pre></a>
+<pre>    5	:	admin</pre>
+<pre>    5	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_tools_firmware.js.html" title="./s103_deep_search/deep_search_tools_firmware.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/spanish/tools_firmware.js</span></pre></a>
+<pre>    4	:	root</pre>
+<pre>    24	:	upgrade</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_4_bigpond.js.html" title="./s103_deep_search/deep_search_wiz_wan_4_bigpond.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/wiz_wan_4_bigpond.js</span></pre></a>
+<pre>    13	:	password</pre>
+<pre>    5	:	pwd</pre>
+<pre>    5	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_tools_admin.htm.html" title="./s103_deep_search/deep_search_dsc_tools_admin.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/german/dsc/dsc_tools_admin.htm</span></pre></a>
+<pre>    13	:	admin</pre>
+<pre>    2	:	password</pre>
+<pre>    5	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_h_tools_admin.htm.html" title="./s103_deep_search/deep_search_h_tools_admin.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/german/help/h_tools_admin.htm</span></pre></a>
+<pre>    6	:	admin</pre>
+<pre>    2	:	password</pre>
+<pre>    3	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_msg_wiz_wlan_0_flowchart.htm.html" title="./s103_deep_search/deep_search_msg_wiz_wlan_0_flowchart.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/spanish/dsc/msg_wiz_wlan_0_flowchart.htm</span></pre></a>
+<pre>    1	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_l2tpd.html" title="./s103_deep_search/deep_search_l2tpd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/l2tpd</span></pre></a>
+<pre>    1	:	admin</pre>
+<pre>    1	:	passwd</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_st_stats.js.html" title="./s103_deep_search/deep_search_st_stats.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/spanish/st_stats.js</span></pre></a>
+<pre>    8	:	admin</pre>
+<pre>    4	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_wiz_wan_4_pptp.htm.html" title="./s103_deep_search/deep_search_dsc_wiz_wan_4_pptp.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/dsc/dsc_wiz_wan_4_pptp.htm</span></pre></a>
+<pre>    4	:	password</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_4_pptp.js.html" title="./s103_deep_search/deep_search_wiz_wan_4_pptp.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/wiz_wan_4_pptp.js</span></pre></a>
+<pre>    7	:	password</pre>
+<pre>    4	:	pwd</pre>
+<pre>    4	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_syslogd.html" title="./s103_deep_search/deep_search_syslogd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/syslogd</span></pre></a>
+<pre>    1	:	admin</pre>
+<pre>    1	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_sys_fw_valid.js.html" title="./s103_deep_search/deep_search_sys_fw_valid.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/sys_fw_valid.js</span></pre></a>
+<pre>    1	:	root</pre>
+<pre>    2	:	upgrade</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_gatedesc.xml.html" title="./s103_deep_search/deep_search_gatedesc.xml.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/etc/linuxigd/gatedesc.xml</span></pre></a>
+<pre>    3	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_tools_ddns.js.html" title="./s103_deep_search/deep_search_tools_ddns.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/french/tools_ddns.js</span></pre></a>
+<pre>    10	:	password</pre>
+<pre>    5	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_bsc_wan.js.html" title="./s103_deep_search/deep_search_bsc_wan.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/spanish/bsc_wan.js</span></pre></a>
+<pre>    32	:	password</pre>
+<pre>    12	:	pwd</pre>
+<pre>    4	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_4_l2tp.js.html" title="./s103_deep_search/deep_search_wiz_wan_4_l2tp.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/wiz_wan_4_l2tp.js</span></pre></a>
+<pre>    8	:	password</pre>
+<pre>    5	:	pwd</pre>
+<pre>    5	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_sup_menu2.htm.html" title="./s103_deep_search/deep_search_dsc_sup_menu2.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/german/dsc/dsc_sup_menu2.htm</span></pre></a>
+<pre>    3	:	admin</pre>
+<pre>    3	:	root</pre>
+<pre>    1	:	upgrade</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_wiz_wlan_3_set_sec.htm.html" title="./s103_deep_search/deep_search_dsc_wiz_wlan_3_set_sec.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/dsc/dsc_wiz_wlan_3_set_sec.htm</span></pre></a>
+<pre>    2	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_wiz_wlan_3_set_sec.htm.html" title="./s103_deep_search/deep_search_dsc_wiz_wlan_3_set_sec.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/dsc/dsc_wiz_wlan_3_set_sec.htm</span></pre></a>
+<pre>    4	:	password</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_spt_menu.htm.html" title="./s103_deep_search/deep_search_spt_menu.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/german/support/spt_menu.htm</span></pre></a>
+<pre>    4	:	admin</pre>
+<pre>    4	:	root</pre>
+<pre>    1	:	upgrade</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_login_fail.js.html" title="./s103_deep_search/deep_search_login_fail.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/login_fail.js</span></pre></a>
+<pre>    2	:	password</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_lpd.perms.html" title="./s103_deep_search/deep_search_lpd.perms.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/etc/lpd.perms</span></pre></a>
+<pre>    5	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_msg_wiz_wlan_0_flowchart.js.html" title="./s103_deep_search/deep_search_msg_wiz_wlan_0_flowchart.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/spanish/msg_wiz_wlan_0_flowchart.js</span></pre></a>
+<pre>    2	:	password</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_gateconnSCPD.xml.html" title="./s103_deep_search/deep_search_gateconnSCPD.xml.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/etc/linuxigd/gateconnSCPD.xml</span></pre></a>
+<pre>    1	:	password</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_h_tools_admin.htm.html" title="./s103_deep_search/deep_search_h_tools_admin.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/help/h_tools_admin.htm</span></pre></a>
+<pre>    7	:	admin</pre>
+<pre>    3	:	password</pre>
+<pre>    4	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wlan_3_set_sec.js.html" title="./s103_deep_search/deep_search_wiz_wlan_3_set_sec.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/german/wiz_wlan_3_set_sec.js</span></pre></a>
+<pre>    17	:	password</pre>
+<pre>    3	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_bsc_wan.js.html" title="./s103_deep_search/deep_search_bsc_wan.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/french/bsc_wan.js</span></pre></a>
+<pre>    36	:	password</pre>
+<pre>    15	:	pwd</pre>
+<pre>    5	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_tools_log_setting.js.html" title="./s103_deep_search/deep_search_tools_log_setting.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/german/tools_log_setting.js</span></pre></a>
+<pre>    8	:	password</pre>
+<pre>    4	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_sh.html" title="./s103_deep_search/deep_search_sh.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/sh</span></pre></a>
+<pre>    1	:	password</pre>
+<pre>    2	:	pwd</pre>
+<pre>    1	:	root</pre>
+<pre>    3	:	telnet</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_h_tools_firmware.htm.html" title="./s103_deep_search/deep_search_h_tools_firmware.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/help/h_tools_firmware.htm</span></pre></a>
+<pre>    1	:	root</pre>
+<pre>    1	:	upgrade</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_tools_log_setting.htm.html" title="./s103_deep_search/deep_search_dsc_tools_log_setting.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/german/dsc/dsc_tools_log_setting.htm</span></pre></a>
+<pre>    4	:	admin</pre>
+<pre>    4	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_libssl.so.0.9.7.html" title="./s103_deep_search/deep_search_libssl.so.0.9.7.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/lib/libssl.so.0.9.7</span></pre></a>
+<pre>    4	:	passwd</pre>
+<pre>    1	:	private key</pre>
+<pre>    1	:	root</pre>
+<pre>    847	:	ssl</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_wiz_wan_4_bigpond.htm.html" title="./s103_deep_search/deep_search_dsc_wiz_wan_4_bigpond.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/dsc/dsc_wiz_wan_4_bigpond.htm</span></pre></a>
+<pre>    4	:	password</pre>
+<pre>    2	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_st_stats.js.html" title="./s103_deep_search/deep_search_st_stats.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/french/st_stats.js</span></pre></a>
+<pre>    10	:	admin</pre>
+<pre>    5	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_tools_firmware.js.html" title="./s103_deep_search/deep_search_tools_firmware.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/en/tools_firmware.js</span></pre></a>
+<pre>    5	:	root</pre>
+<pre>    31	:	upgrade</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_dsc_sup_menu2.htm.html" title="./s103_deep_search/deep_search_dsc_sup_menu2.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/french/dsc/dsc_sup_menu2.htm</span></pre></a>
+<pre>    4	:	admin</pre>
+<pre>    4	:	root</pre>
+<pre>    1	:	upgrade</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_4_pptp.htm.html" title="./s103_deep_search/deep_search_wiz_wan_4_pptp.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/Home/wiz_wan_4_pptp.htm</span></pre></a>
+<pre>    10	:	password</pre>
+<pre>    3	:	pwd</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_3_sel_wan.js.html" title="./s103_deep_search/deep_search_wiz_wan_3_sel_wan.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/spanish/wiz_wan_3_sel_wan.js</span></pre></a>
+<pre>    16	:	password</pre>
+<pre>    4	:	root</pre>
+<pre>    4	:	ssl</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_h_tools_admin.htm.html" title="./s103_deep_search/deep_search_h_tools_admin.htm.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/french/help/h_tools_admin.htm</span></pre></a>
+<pre>    9	:	admin</pre>
+<pre>    3	:	password</pre>
+<pre>    5	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_tools_log_setting.js.html" title="./s103_deep_search/deep_search_tools_log_setting.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/italian/tools_log_setting.js</span></pre></a>
+<pre>    13	:	password</pre>
+<pre>    5	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_wiz_wan_4_pptp.js.html" title="./s103_deep_search/deep_search_wiz_wan_4_pptp.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/german/wiz_wan_4_pptp.js</span></pre></a>
+<pre>    8	:	password</pre>
+<pre>    5	:	pwd</pre>
+<pre>    5	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_services.html" title="./s103_deep_search/deep_search_services.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/etc/services</span></pre></a>
+<pre>    2	:	admin</pre>
+<pre>    6	:	passwd</pre>
+<pre>    1	:	password</pre>
+<pre>    2	:	pwd</pre>
+<pre>    1	:	root</pre>
+<pre>    9	:	ssl</pre>
+<pre>    7	:	telnet</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_menu.js.html" title="./s103_deep_search/deep_search_menu.js.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/locale/spanish/menu.js</span></pre></a>
+<pre>    5	:	admin</pre>
+<pre>    5	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_README.txt.html" title="./s103_deep_search/deep_search_README.txt.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/www/comm/.svn/README.txt</span></pre></a>
+<pre>    1	:	admin</pre>
+<pre>    1	:	root</pre>
+<br />
+<a class="reference" href="./s103_deep_search/deep_search_pppd.html" title="./s103_deep_search/deep_search_pppd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> /log/firmware/firmware_binwalk_emba/_firmware.extracted/squashfs-root/bin/pppd</span></pre></a>
+<pre>    5	:	admin</pre>
+<pre>    2	:	passwd</pre>
+<pre>    7	:	password</pre>
+<pre>    5	:	root</pre>
+<pre>    1	:	ssl</pre>
+<br />
+<br />
+<pre>[</span><span class="orange">*</span>] Occurences of pattern:</pre>
+<pre>    </span><span class="orange">1170: ssl</span></pre>
+<pre>    </span><span class="orange">1026: password</span></pre>
+<pre>    </span><span class="orange">534: root</span></pre>
+<pre>    </span><span class="orange">382: admin</span></pre>
+<pre>    </span><span class="orange">148: pwd</span></pre>
+<pre>    </span><span class="orange">124: upgrade</span></pre>
+<pre>    </span><span class="orange">27: passwd</span></pre>
+<pre>    </span><span class="orange">26: private key</span></pre>
+<pre>    </span><span class="orange">19: telnet</span></pre>
+<pre>    </span><span class="orange">0: dropbear</span></pre>
+<br />
+  <!-- content end -->
+</div>
+
+<a href="https://github.com/e-m-b-a/emba" title="github.com/e-m-b-a/emba" target="_blank">
+  <div id="buttonInfo" class="rectButtonVisible">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" transform="translate(2 2)"><g stroke="white" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="8"/><path d="M8.5 12.5v-4h-1"/><path d="M7.5 12.5h2"/></g><circle cx="8.5" cy="5.5" fill="white" r="1"/></g></svg>
+  </div>
+</a>
+<a href="./s106_deep_key_search.html" title="./s106_deep_key_search.html" ><div id="buttonBack" class="rectButtonVisible"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><path d="M9.5 14.5l4-4l-4-4" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/></svg></div></a>
+<a href="./s100_command_inj_check.html" title="./s100_command_inj_check.html" ><div id="buttonForward" class="rectButtonVisible"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><path d="M11.5 14.5l-4-4l4-4" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/></svg></div> </a>
+<div id="buttonDown" class="rectButton" onclick="scrollDown()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.5l-4 4l-4-4"/><path d="M14.5 10.5l-4 4l-4-4"/></g></svg></div>
+<div id="buttonUp" class="rectButton" onclick="scrollUp()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 14.5l4-4l4 4"/><path d="M6.5 10.5l4-4l4 4"/></g></svg></div> 
+
+<script>
+window.onload = function () {
+  var buttons = document.getElementsByClassName("rectButton");
+  for (let i=0; i<buttons.length; i++) {
+    buttons[i].style.visibility = "visible";
+  }
+  var buttonDown = document.getElementById("buttonDown");
+  buttonDown.classList.add('rectButtonVisible');
+  buttonDown.classList.remove('rectButton');
+
+  var buttonUp = document.getElementById("buttonUp");
+  buttonUp.classList.add('rectButtonVisible');
+  buttonUp.classList.remove('rectButton');
+    
+  var buttonSizer = document.getElementById("buttonSizer");
+  buttonSizer.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 16.5v-4.978l-5-.022"/><path d="M18.5 2.5l-7 7"/><path d="M16.5 9.5l-5 .023V4.5"/><path d="M9.5 11.5l-7 7"/></g></svg>';
+  if (document.getElementById("buttonTime") !== null) {
+    var buttonTime = document.getElementById("buttonTime");
+    buttonTime.style.bottom = "50px";
+  }
+  document.getElementById("expand").value = "+ Show more results";
+  document.getElementById("expand").className += " expand";
+}
+
+function openNav() {
+  document.getElementById("sidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("nav").style.visibility = "visible";
+}
+
+function closeNav() {
+  document.getElementById("sidenav").style.width = "50px";
+  document.getElementById("sidenav").scrollTop = 0;
+  document.getElementById("main").style.marginLeft = "50px";
+  document.getElementById("nav").style.visibility = "hidden";
+}
+
+function scrollDown() {
+  window.scrollTo(0,document.body.scrollHeight);
+}
+
+function scrollUp() {
+  window.scrollTo(0,0);
+}
+
+function buttonNav() {
+  var button = document.getElementById("buttonSizer");
+  if ( button.classList.contains('buttonOpen') ) {
+    button.classList.remove('buttonOpen');
+    button.classList.add('buttonClose');
+    button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 16.5v-4.978l-5-.022"/><path d="M18.5 2.5l-7 7"/><path d="M16.5 9.5l-5 .023V4.5"/><path d="M9.5 11.5l-7 7"/></g></svg>';
+    openNav();
+  } else if( button.classList.contains('buttonClose') ) {
+    button.classList.remove('buttonClose');
+    button.classList.add('buttonOpen');
+    button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M18.5 7.5v-5h-5"/><path d="M18.5 2.5l-6 5.929"/><path d="M7.5 18.5l-5 .023V13.5"/><path d="M8.5 12.5l-6 6"/></g></svg>';
+    closeNav();
+  };
+}
+
+document.onkeydown = function(e) {
+    switch (e.keyCode) {
+      case 37:
+        document.getElementById("buttonForward").parentNode.click(); 
+        break;
+      case 39:
+        document.getElementById("buttonBack").parentNode.click();       
+        break;
+    }
+};
+</script>
+
+</body>
+</html>

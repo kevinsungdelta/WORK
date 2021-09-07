@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+
+
+
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>FACT</title>
+    <link rel="shortcut icon" href="/static/fact_icon.ico">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/static/web_css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/web_css/fontawesome/css/all.css">
+    <script type="text/javascript" src="/static/web_js/jquery.min.js"></script>
+
+    <script type="text/javascript" src="/static/web_js/popper.min.js"></script>
+    <script type="text/javascript" src="/static/web_js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="/static/web_js/moment.js"></script>
+    <link rel="stylesheet" href="/static/web_css/bootstrap-datepicker.standalone.css">
+
+    <script type="text/javascript" src="/static/web_js/bootstrap-datepicker.js"></script>
+
+    <script>
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip();
+                $(".toggle").click(function(){
+                    $(".expand").toggle();
+                });
+            });
+            function quickSearch() {
+                let search_input = document.getElementById('quick_search_input').value;
+                window.location = '/database/quick_search?search_term=' + search_input;
+            }
+
+
+
+    </script>
+
+    
+    <style>
+    .bubble {
+        position: relative;
+        font-family: 'Courier New', Courier, monospace;
+        color: #fff;
+        background: #007bff;
+        border-radius: 10px;
+        padding: 8px;
+        margin: -3px;
+        margin-bottom: -15px;
+    }
+    .bubble-triangle:after {
+        content: '';
+        border: 10px solid transparent;
+        border-left: 10px solid #007bff;
+        border-top: 10px solid #007bff;
+        position: absolute;
+        bottom: -10px;
+        left: 25px;
+    }
+    </style>
+
+
+    <style>
+            a:link{
+                color:#2b669a;
+                text-decoration:none;
+            }
+            .clickable {
+                cursor:pointer;
+            }
+            .bg-fact {
+                  background-color: #255e54 !important;
+            }
+            .navbar-light .navbar-brand, .navbar-light .navbar-nav > li > a {
+                color: #ddd;
+            }
+            .navbar-light .navbar-brand:hover, .navbar-light .navbar-nav > li > a:hover {
+                color: #fff;
+            }
+
+            .tooltip > .tooltip-inner {
+                background-color: #2b669a;
+                color: #FFFFFF;
+                border: 1px solid #2b669a;
+                padding: 5px;
+                font-size: 15px;
+            }
+            .tooltip.top > .tooltip-arrow {
+                border-top: 5px solid #2b669a;
+            }
+
+            .table-head-light,
+            .table-head-light > th,
+            .table-head-light > td {
+                background-color: #e9ecef;
+            }
+            .table-hover .table-head-light:hover {
+                background-color: #d6d8db;
+            }
+            .table-hover .table-head-light:hover > td,
+            .table-hover .table-head-light:hover > th {
+                background-color: #d6d8db;
+            }
+            .li-hover {
+                box-shadow: 0 0 0 rgba(0,0,0,.125);
+            }
+            .li-hover:hover {
+                box-shadow: 5px 5px 20px rgba(0,0,0,.125);
+                z-index: 1;
+                border-top: 0;
+                transition: box-shadow 0.3s ease-in-out;
+            }
+            .table-analysis {
+                font-size: 15px;
+            }
+            .footnote {
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 10px;
+            }
+
+
+
+    </style>
+    
+</head>
+
+<body>
+
+<nav role="navigation" class="navbar navbar-expand navbar-light flex-column flex-md-row bg-fact">
+    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggler">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-brand d-none d-md-block mr-0 mr-md-2" style="vertical-align: middle; margin-left: 15px">
+        <span><img height="25px" src="/static/fact_logo_inv.svg"></span>
+    </div>
+    <div class="navbar-brand d-none d-xl-block" style="vertical-align: middle">
+        Firmware Analysis and Comparison Tool
+    </div>
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+        <!-- Navbar Elements -->
+        <ul class="navbar-nav" style="padding-right: 5px">
+            
+            
+            <li class="pr-3">
+                <a style="color: #fff; font-weight: 500;"  href=/><i class="fas fa-home"></i> Home</a>
+            </li>
+            
+            
+            
+            <li class="dropdown pr-3">
+                <a 
+                   class="dropdown-toggle" data-toggle="dropdown" href="#"><i
+                        class="fas fa-tasks"></i>&nbsp;Database<span class="caret"></span></a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/database/browse" style="font-size: 14px"><i
+                            class="fas fa-list-ul"></i> Browse Firmware</a>
+                    <a class="dropdown-item" href="/database/browse_compare" style="font-size: 14px"><i
+                            class="far fa-copy"></i> Browse Compares</a>
+                    <a class="dropdown-item" href="/database/search" style="font-size: 14px"><i
+                            class="fas fa-search"></i> Basic Search</a>
+                    <a class="dropdown-item" href="/database/advanced_search" style="font-size: 14px"><i
+                            class="fas fa-search-plus"></i> Advanced Search</a>
+                    <a class="dropdown-item" href="/database/binary_search" style="font-size: 14px"><i
+                            class="fas fa-search-dollar"></i> Binary Pattern Search</a>
+                </div>
+            </li>
+            
+            
+            
+            <li class="pr-3">
+                <a  href=/upload><i class="fas fa-upload"></i> Upload</a>
+            </li>
+            
+            
+            
+            <li class="dropdown pr-3">
+                <a 
+                   class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fas fa-info-circle"></i>&nbsp;Info<span class="caret"></span></a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/statistic" style="font-size: 14px"><i class="fas fa-chart-bar"></i>
+                        Statistics</a>
+                    <a class="dropdown-item" href="/system_health" style="font-size: 14px"><i
+                            class="fas fa-heartbeat"></i> System</a>
+                    <a class="dropdown-item" href="/doc" style="font-size: 14px"><i class="fas fa-terminal"></i> Rest API</a>
+                    <a class="dropdown-item" href="/about" style="font-size: 14px"><i class="fas fa-beer"></i> About</a>
+                </div>
+            </li>
+            
+            
+            
+            <li class="pr-3">
+                <a 
+                    data-toggle="modal" data-target="#feedbackModal" href="#"> <i class="fas fa-bullhorn"></i> Feedback </a>
+            </li>
+            
+            
+            
+            <li class="dropdown pr-3">
+                <a 
+                   class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fas fa-user-shield"></i>&nbsp;Admin<span class="caret"></span></a>
+                <div class="dropdown-menu">
+                    
+                    <a class="dropdown-item" href="/admin/missing_analyses" style="font-size: 14px"><i
+                            class="fas fa-search"></i> Find Missing Analyses</a>
+                    <a class="dropdown-item" href="/admin/logs" style="font-size: 14px"><i
+                            class="fas fa-exclamation-circle"></i> Logs</a>
+                </div>
+            </li>
+            
+            
+        </ul>
+
+        <!-- Navbar Quick Search Input -->
+        <div id="quick_search_div" class="nav navbar-nav ml-md-auto d-none d-md-block">
+            <div class="input-group mr-sm-2">
+                <input type="text" class="form-control" placeholder="Quick search name, vendor and hash values"
+                       id="quick_search_input" onKeyDown="if(event.keyCode==13) quickSearch();"
+                       style="margin: 0; background-color: #e7e7e7; border-radius: 0; border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;">
+                <div class="input-group-append">
+                    <button class="btn btn-secondary" type="button" onclick="quickSearch()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+<div class="container-fluid" style="width: 90%">
+    <!-- flash messages -->
+    
+    
+    
+
+    
+    <div class="row justify-content-center mt-4">
+
+    	<div class="p-0 m-2">
+            <center>
+                <img width="100%" height="auto" src="/static/fact_logo.png" style="max-width: 445px;">
+
+                <br /><br />
+
+                <h4 class="mb-3">General FACTs</h4>
+                <table class="table table-sm table-responsive" style="width: 705px;">
+                    <tbody>
+                        <tr>
+                            <td style="text-align: left; padding:5px">firmware samples</td>
+                            <td style="text-align: right; padding:5px">0</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left; padding:5px">firmware total size</td>
+                            <td style="text-align: right; padding:5px">0.00 Bit</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left; padding:5px">firmware average size</td>
+                            <td style="text-align: right; padding:5px">0.00 Bit</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left; padding:5px">unique included files</td>
+                            <td style="text-align: right; padding:5px">0</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left; padding:5px">unique included files total size</td>
+                            <td style="text-align: right; padding:5px">0.00 Bit</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left; padding:5px">unique included files average size</td>
+                            <td style="text-align: right; padding:5px">0.00 Bit</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left; padding:5px">statistic generation time</td>
+                            <td style="text-align: right; padding:5px">0.00 s</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left; padding:5px">backend cpu load</td>
+                            <td id="cpu_percentage" style="text-align: right; padding:5px">n/a</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left; padding:5px">currently analyzed firmware</td>
+                            <td id="currently_running" style="text-align: right; padding:5px">n/a</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+    	</div>
+        <script>
+            function load_ajax_stats(){
+                let system_data = $.getJSON("/ajax/stats/system")
+                .success(function(system_data) {
+                    document.getElementById("cpu_percentage").innerHTML = system_data.backend_cpu_percentage;
+
+                    let running_node =  document.getElementById("currently_running");
+                    if (system_data.number_of_running_analyses > 0) {
+
+                        if (! running_node.classList.contains('text-success')) {
+                            running_node.classList.add('text-success');
+                        }
+                    } else {
+                        if (running_node.classList.contains('text-success')) {
+                            running_node.classList.remove('text-success');
+                            }
+                    }
+
+                    running_node.innerHTML = system_data.number_of_running_analyses;
+                });
+            }
+
+            load_ajax_stats();
+            setInterval(function(){
+                load_ajax_stats()
+            }, 10000);
+        </script>
+
+    	
+
+    </div>
+
+    <div class="row justify-content-center">
+    	
+
+        
+    	
+    </div>
+
+
+
+    <hr class="mt-5"/>
+
+    <div class="row justify-content-center mb-2">
+        <div class="col-md-4 text-center">
+            powered by <a href="https://fkie-cad.github.io/FACT_core/">FACT 3.3-dev</a><br/>
+            &copy; <a href="http://www.fkie.fraunhofer.de">Fraunhofer FKIE</a> 2015-2021
+        </div>
+    </div>
+</div>
+
+<!-- Feedback Modal Content -->
+<div class="modal fade" id="feedbackModal" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                 aria-labelledby="feedbackModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="feedbackModalLabel">Feedback Options</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li> The easiest way to connect with us is on our <a href="https://gitter.im/FACT_core/community" target="_blank" rel="noopener noreferrer">Gitter channel</a></li>
+                    <li> You can contact us by writing an email to <br> <a href="mailto:firmware-security@fkie.fraunhofer.de">firmware-security@fkie.fraunhofer.de</a> </li>
+                    <li> You can also open an issue on <a href="https://github.com/fkie-cad/FACT_core/issues/new" target="_blank" rel="noopener noreferrer">FACT's GitHub page</a></li>
+                    <li> If you like, you can follow us on <a href="https://twitter.com/faandctool" target="_blank" rel="noopener noreferrer">Twitter</a> as well</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
